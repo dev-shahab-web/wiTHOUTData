@@ -1,7 +1,7 @@
 "use client";
 import Image from "next/image";
 import React from "react";
-import bgErrorImg from "../../../public/assets/images/bg/404.png";
+import bgErrorImg from "../../public/assets/images/bg/404.png";
 import { imageLoader } from "@/hooks/image-loader";
 import Link from "next/link";
 
