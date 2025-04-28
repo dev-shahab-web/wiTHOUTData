@@ -12,8 +12,8 @@ import shapeSeven from "../../../public/assets/images/shapes/plane-line.png";
 import shapeEight from "../../../public/assets/images/shapes/dot-square.png";
 import shapeYellow from "../../../public/assets/images/shapes/yellow-shape.png";
 import bgImage from "../../../public/assets/images/bg/banner-bg.png";
-import bannerThumbOne from "../../../public/assets/images/banner/banner-1-img-1.png";
-import bannerThumbTwo from "../../../public/assets/images/banner/banner-1-img-2.png";
+// import bannerThumbOne from "../../../public/assets/images/banner/banner-1-img-1.png";
+// import bannerThumbTwo from "../../../public/assets/images/banner/banner-1-img-2.png";
 import SearchFilterTwo from "../shearedComponents/SearchFilterTwo";
 
 const BannerOne = () => {
@@ -136,7 +136,7 @@ const BannerOne = () => {
                       className="banner-thumb-wrapper position-relative wow bdFadeInRight"
                       data-wow-delay=".3s"
                     >
-                      <div
+{/*                       <div
                         className="banner-thumb-one wow bdFadeInRight"
                         data-wow-delay=".4s"
                       >
@@ -146,8 +146,8 @@ const BannerOne = () => {
                           style={{ width: "100%", height: "100%" }}
                           alt="image"
                         />
-                      </div>
-                      <div
+                      </div> */}
+{/*                       <div
                         className="banner-thumb-two wow bdFadeInRight"
                         data-wow-delay=".5s"
                       >
@@ -157,7 +157,7 @@ const BannerOne = () => {
                           style={{ width: "100%", height: "100%" }}
                           alt="image"
                         />
-                      </div>
+                      </div> */}
                     </div>
                   </div>
                 </div>
