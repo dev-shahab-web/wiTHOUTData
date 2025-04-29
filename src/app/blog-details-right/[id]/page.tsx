@@ -2,6 +2,14 @@ import BlogDetailsRightMain from "@/components/blog-details-right/BlogDetailsRig
 import MetaData from "@/hooks/useMetaData";
 import Wrapper from "@/layout/DefaultWrapper";
 import React from "react";
+import { blogData } from "@/data/blog-data";
+
+// Generate static params for all blog posts
+export function generateStaticParams() {
+  return blogData.map((blog) => ({
+    id: blog.id.toString(),
+  }));
+}
 
 const BlogDetailsRightDynamicPage = ({
   params,

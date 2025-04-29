@@ -2,6 +2,13 @@ import BlogDetailsLeftMain from "@/components/blog-details-left/BlogDetailsLeftM
 import MetaData from "@/hooks/useMetaData";
 import Wrapper from "@/layout/DefaultWrapper";
 import React from "react";
+import { blogData } from "@/data/blog-data";
+
+export function generateStaticParams() {
+  return blogData.map((blog) => ({
+    id: blog.id.toString(),
+  }));
+}
 
 const BlogDetailsLeftDynamicPage = ({ params }: { params: { id: number } }) => {
   const id = params.id;
