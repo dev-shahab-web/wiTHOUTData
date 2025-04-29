@@ -1,4 +1,3 @@
-"use client";
 import TourDetailsMain from "@/components/tour-details/TourDetailsMain";
 import MetaData from "@/hooks/useMetaData";
 import Wrapper from "@/layout/DefaultWrapper";
