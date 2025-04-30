@@ -21,7 +21,7 @@ const SidebarMain = () => {
                     <Image
                       src={HeaderLogo}
                       loader={imageLoader}
-                      style={{ width: "100%", height: "100px" ,scale: "1.35" }}
+                      style={{ width: "100%", height: "100px", scale: "1.35" }}
                       alt="logo not found"
                     />
                   </Link>
@@ -74,7 +74,8 @@ const SidebarMain = () => {
                     </div>
                     <div className="offcanvas-contact-text">
                       <Link target="_blank" href="#">
-                      Opp. Gorakhpur Railway Station
+                        Shop No. 1 Gorakhnath Road Opposite Gorakhnath Temple
+                        Gorakhpur 273015
                       </Link>
                     </div>
                   </li>
@@ -84,8 +85,12 @@ const SidebarMain = () => {
                         <i className="far fa-phone"></i>
                       </Link>
                     </div>
-                    <div className="offcanvas-contact-text">
-                    <Link href="tel:+918429812424">+91 842 981 2424</Link>
+                    <div
+                      className="offcanvas-contact-text"
+                      style={{ display: "flex", flexDirection: "column" }}
+                    >
+                      <Link href="tel:+918429812424">+91 842 981 2424</Link>
+                      <Link href="tel:+918429962424">+91 842 996 2424</Link>
                     </div>
                   </li>
                   <li className="d-flex align-items-center gap-10">
@@ -95,9 +100,9 @@ const SidebarMain = () => {
                       </Link>
                     </div>
                     <div className="offcanvas-contact-text">
-                    <Link href="mailto:holynepalyatra@gmail.com">
-                            holynepalyatra@gmail.com
-                          </Link>
+                      <Link href="mailto:holynepalyatra@gmail.com">
+                        holynepalyatra@gmail.com
+                      </Link>
                     </div>
                   </li>
                 </ul>
@@ -117,25 +122,34 @@ const SidebarMain = () => {
                 <h4 className="offcanvas-title-meta">Subscribe & Follow</h4>
                 <ul>
                   <li>
-                    <Link href="https://www.facebook.com/">
-                      <i className="fab fa-facebook-f"></i>
+                    <Link
+                      className="fab fa-instagram-f"
+                      href="https://www.instagram.com/holynepalyatra/"
+                      target="blank"
+                    >
+                      <i className="icon-instagram"></i>
                     </Link>
                   </li>
                   <li>
+                    <Link href="https://www.facebook.com/profile.php?id=61572491938150/">
+                      <i className="fab fa-facebook-f"></i>
+                    </Link>
+                  </li>
+                  {/* <li>
                     <Link href="https://www.twitter.com/">
                       <i className="fab fa-twitter"></i>
                     </Link>
-                  </li>
+                  </li> */}
                   <li>
                     <Link href="https://www.youtube.com/">
                       <i className="fab fa-youtube"></i>
                     </Link>
                   </li>
-                  <li>
+                  {/* <li>
                     <Link href="https://www.linkedin.com/">
                       <i className="fab fa-linkedin"></i>
                     </Link>
-                  </li>
+                  </li> */}
                 </ul>
               </div>
             </div>

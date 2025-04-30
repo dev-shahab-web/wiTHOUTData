@@ -23,7 +23,7 @@ const BannerTwo = () => {
   return (
     <>
       <section className="bd-banner-area banner-style-two banner-slider-mask">
-        <div className="banner-booking-two">
+        {/* <div className="banner-booking-two">
           <div className="container">
             <div className="row justify-content-center">
               <div className="col-xxl-8 col-xl-10 col-lg-11">
@@ -36,7 +36,7 @@ const BannerTwo = () => {
               </div>
             </div>
           </div>
-        </div>
+        </div> */}
         <div className="swiper banner-two-active p-relative">
           <div className="swiper-wrapper">
             <Swiper
