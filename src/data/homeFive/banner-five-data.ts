@@ -18,7 +18,7 @@ export const bannerFiveData: IBannerData[] = [
         img: bannerFiveImgThree,
         subTitle: 'Tour & Travel',
         title: 'Skybound Adventures: Fly High with ',
-        warningText: 'Tourigo',
+        warningText: 'HolyNepalYatra',
         description: '8700 TOURS ARE AVAILABLE, ',
     },
     {

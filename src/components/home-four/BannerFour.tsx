@@ -83,7 +83,7 @@ const BannerFour = () => {
               className="section-subtitle mb-25 wow bdFadeInLeft color-warning"
               data-wow-delay=".3s"
             >
-              Welcome Tourigo
+              Welcome HolyNepalYatra
             </span>
             <h1
               className="banner-title white-text mb-30 wow bdFadeInLeft"

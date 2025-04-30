@@ -12,11 +12,11 @@ const ContactFormArea = () => {
               <div className="section-title-wrapper">
                 <span className="section-subtitle mb-10">Contact us</span>
                 <h3 className="section-title mb-15">
-                  Get 100% Free Course Contact With Us!
+                Get 100% Free Booking Assistance – Contact With Us!
                 </h3>
                 <p>
-                  Lorem ipsum dolor sit amet consectetur adipiscing elit massa
-                  mi. Aliquam hendrerit urna pellentesque
+                Planning a spiritual journey across Nepal’s holy sites?
+                Let our team assist you with free travel consultation and hassle-free bookings — from tour packages and hotels to transportation and temple visits.
                 </p>
                 <div className="section-divider mb-25"></div>
                 <div className="contact-social">
@@ -28,13 +28,13 @@ const ContactFormArea = () => {
                       <li>
                         <Link
                           className="facebook"
-                          href="https://facebook.com/"
+                          href="https://www.facebook.com/profile.php?id=61572491938150/"
                           target="blank"
                         >
                           <i className="icon-facebook"></i>
                         </Link>
                       </li>
-                      <li>
+                      {/* <li>
                         <Link
                           className="twitter"
                           href="https://twitter.com/"
@@ -42,17 +42,17 @@ const ContactFormArea = () => {
                         >
                           <i className="icon-twitter-x"></i>
                         </Link>
-                      </li>
+                      </li> */}
                       <li>
                         <Link
                           className="instagram"
-                          href="https://www.instagram.com"
+                          href="https://www.instagram.com/holynepalyatra/"
                           target="blank"
                         >
                           <i className="icon-instagram"></i>
                         </Link>
                       </li>
-                      <li>
+                      {/* <li>
                         <Link
                           className="linkedin"
                           href="https://www.linkedin.com"
@@ -60,7 +60,7 @@ const ContactFormArea = () => {
                         >
                           <i className="icon-linkedin"></i>
                         </Link>
-                      </li>
+                      </li> */}
                       <li>
                         <Link className="youtube" href="https://youtube.com/">
                           <i className="icon-youtube"></i>

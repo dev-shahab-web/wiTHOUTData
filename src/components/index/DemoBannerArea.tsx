@@ -88,9 +88,9 @@ const DemoBannerArea = () => {
                   </h1>
                   <p>
                     Embark on a seamless voyage into the world of travel with
-                    Tourigo, a cutting-edge Tour & Travel Bootstrap 5 Template
+                    HolyNepalYatra, a cutting-edge Tour & Travel website
                     that elevates your website to new heights. Crafted with
-                    precision and designed for versatility, Tourigo is your
+                    precision and designed for versatility, HolyNepalYatra is your
                     passport to creating a stunning online presence for your
                     travel agency, tour operator, or any travel-related
                     business.
