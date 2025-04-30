@@ -25,10 +25,10 @@ const menu_data: MenuType[] = [
   },
   {
     id: 2,
-    hasDropdown: true,
+    hasDropdown: false,
     active: true,
-    megaMenu: true,
-    children: true,
+    megaMenu: false,
+    children: false,
     title: "Packages",
     pluseIncon: true,
     link: "/tour-listing-three",
