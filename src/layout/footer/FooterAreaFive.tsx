@@ -88,15 +88,19 @@ const FooterAreaFive = () => {
                       us and let your journey begin!
                     </p>
                     <div className="theme-social is-white-color">
-                      <Link href="https://www.facebook.com/">
-                        <i className="icon-facebook"></i>
-                      </Link>
-                      <Link href="https://www.twitter.com/">
-                        <i className="icon-twitter-x"></i>
-                      </Link>
-                      <Link href="https://www.linkedin.com/">
+                    <Link
+                      className="fab fa-instagram-f"
+                      href="https://www.instagram.com/holynepalyatra/"
+                      target="blank"
+                    >
+                      <i className="icon-instagram"></i>
+                    </Link>
+                    <Link href="https://www.facebook.com/profile.php?id=61572491938150/">
+                      <i className="fab fa-facebook-f"></i>
+                    </Link>
+                      {/* <Link href="https://www.linkedin.com/">
                         <i className="icon-linkedin"></i>
-                      </Link>
+                      </Link> */}
                       <Link href="https://www.youtube.com/">
                         <i className="icon-youtube"></i>
                       </Link>
