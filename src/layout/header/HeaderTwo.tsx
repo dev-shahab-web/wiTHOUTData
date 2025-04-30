@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import React from "react";
+import React, { useEffect, useState } from "react";
 import logoBlack from "../../../public/assets/images/logo/logo-black.svg";
 import HeaderLogo from "../../../public/assets/images/logo/logo.png";
 import { imageLoader } from "@/hooks/image-loader";
@@ -9,6 +9,20 @@ import MenuTwo from "./components/MenuTwo";
 
 const HeaderTwo = () => {
   const { toggleSideMenu, scrollDirection } = useGlobalContext();
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobile(window.innerWidth <= 768); // Check if screen width is <= 768px
+    };
+
+    // Add event listener for resize
+    window.addEventListener("resize", handleResize);
+    handleResize(); // Run initially
+
+    // Cleanup event listener on component unmount
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
   return (
     <>
       <header>
@@ -27,7 +41,7 @@ const HeaderTwo = () => {
                       <Image
                         src={HeaderLogo}
                         loader={imageLoader}
-                        style={{ width: "100%", height: "60px", scale: "2.1" }}
+                        style={{ width: "100%", height: "60px", scale: isMobile ? 1.5 : 2.1 }}
                         alt="logo not found"
                       />
                     </Link>
