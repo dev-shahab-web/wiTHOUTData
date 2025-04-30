@@ -17,7 +17,7 @@ const ElementBreadcrumb = ({ titleOne, titleTwo }: TProps) => {
                   <div className="bd-breadcrumb-list justify-content-start">
                     <span>
                       <Link href="/home">
-                        <i className="icon-home"></i>Tourigo
+                        <i className="icon-home"></i>HolyNepalYatra
                       </Link>
                     </span>
                     <span>Elements</span>

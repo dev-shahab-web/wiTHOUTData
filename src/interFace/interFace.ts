@@ -230,6 +230,7 @@ export interface IContactData {
   title: string;
   subTitleOne: string;
   subTitleTwo: string;
+  icon: string;
 }
 
 export interface IBlogDataTypedemo {

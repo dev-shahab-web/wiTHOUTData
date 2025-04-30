@@ -1,31 +1,32 @@
 import { IHomeTwoSliderData } from "@/interFace/interFace";
 import bannerImgOne from '../../../public/assets/images/banner/banner-2-img-1.jpeg';
-import bannerImgTwo from '../../../public/assets/images/banner/banner-2-img-2.png';
-import bannerImgThree from '../../../public/assets/images/banner/banner-2-img-3.png';
+import bannerImgTwo from '../../../public/assets/images/banner/banner-2-img-2.jpeg';
+import bannerImgThree from '../../../public/assets/images/banner/banner-2-img-3.jpeg';
 
 export const sliderData: IHomeTwoSliderData[] = [
     {
-        id: 1,
-        bgImg: bannerImgOne,
-        tagOne: "Mountain Serenity: Finding",
-        tagTwo: "Peace",
-        tagThree: "Amidst Alpine Majesty",
-        description: "A picturesque picnic for two, basking in nature's serenity, forging memories to last a lifetime."
+      id: 1,
+      bgImg: bannerImgOne,
+      tagOne: "Spiritual Journeys",
+      tagTwo: "Through Nepal's",
+      tagThree: "Sacred Landscapes",
+      description: "Experience the divine at Muktinath, Lumbini, and beyond — where every step connects you with the spiritual soul of the Himalayas."
     },
     {
-        id: 2,
-        bgImg: bannerImgOne,
-        tagOne: " Conquering the Waves:",
-        tagTwo: "Thrilling",
-        tagThree: 'Water Mount Adventure',
-        description: "Riding the waves: A man finds joy and adventure on his water mount."
+      id: 2,
+      bgImg: bannerImgTwo,
+      tagOne: "Aerial Views of",
+      tagTwo: "The Majestic",
+      tagThree: "Himalayas",
+      description: "Discover the grandeur of Nepal from above with our exclusive helicopter tours – breathtaking, serene, unforgettable."
     },
     {
-        id: 3,
-        bgImg: bannerImgOne,
-        tagOne: "Glide into Adventure: Couples",
-        tagTwo: "Water",
-        tagThree: 'Skating Delight',
-        description: "Embrace the thrill as couples glide together, savoring the joy of water skating delightfully."
-    },
-];
+      id: 3,
+      bgImg: bannerImgThree,
+      tagOne: "Unforgettable Tours",
+      tagTwo: "To Nepal &",
+      tagThree: "Kailash Mansarovar",
+      description: "Explore the culture, nature, and sacred wonders of Nepal and Kailash with expert guidance and personalized service."
+    }
+  ];
+  

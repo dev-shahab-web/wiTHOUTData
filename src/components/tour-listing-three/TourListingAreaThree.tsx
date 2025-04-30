@@ -9,7 +9,7 @@ import { useSearch } from "@/hooks/useSearch";
 import BookingFormModal from "@/elements/modals/BookingFormModal";
 
 const TourListingAreaThree = () => {
-  const filterData = tourData.slice(28, 40);
+  const filterData = tourData.slice(0, 20);
   const searchData = useSearch("tour");
   const mapData = searchData?.length ? searchData : filterData;
   return (

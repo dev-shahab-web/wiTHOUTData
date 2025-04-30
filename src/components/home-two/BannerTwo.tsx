@@ -49,7 +49,7 @@ const BannerTwo = () => {
                 prevEl: ".banner-navigation-prev",
               }}
               autoplay={{
-                delay: 3000,
+                delay: 5000,
               }}
               loop={true}
             >

@@ -12,7 +12,7 @@ const MetaData: React.FC<WrapperProps> = ({ children, pageTitle }) => {
     <>
       <HelmetProvider>
         <Helmet>
-          <title>{`${pageTitle} | Tourigo - Next Js Template`}</title>
+          <title>{`${pageTitle} | HolyNepalYatra - Tours and Travels`}</title>
         </Helmet>
         {children}
       </HelmetProvider>

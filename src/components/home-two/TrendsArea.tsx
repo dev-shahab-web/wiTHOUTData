@@ -100,7 +100,7 @@ const TrendsArea = () => {
                     className="d-flex overflow-hidden custom-swiper"
                   >
                     {tourData &&
-                      tourData.slice(0, 4).map((item) => (
+                      tourData.slice(0, 6).map((item) => (
                         <SwiperSlide
                           key={item.id}
                           className="custom-swiper-slide"

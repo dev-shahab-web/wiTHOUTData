@@ -113,17 +113,17 @@ const FooterAreaFive = () => {
                         <Link href="/about">About Us</Link>
                       </li>
                       <li className="underline-two">
-                        <Link href="/contact">Careers</Link>
+                        <Link href="/contact">Contact Now</Link>
                       </li>
-                      <li className="underline-two">
+                      {/* <li className="underline-two">
                         <Link href="/team">Travel Guides</Link>
-                      </li>
+                      </li> */}
                       <li className="underline-two">
                         <Link href="/tour-details">Traveler Review</Link>
                         <span className="bd-badge warning">New</span>
                       </li>
                       <li className="underline-two">
-                        <Link href="/contact">Contact Now</Link>
+                        <Link href="/tour-listing-three">Packages</Link>
                       </li>
                     </ul>
                   </div>
@@ -177,9 +177,14 @@ const FooterAreaFive = () => {
                           <span className="footer-widget-list-text-top">
                             Call Us
                           </span>
+                          <div style={{ display: "flex", flexDirection: "column" }}>
+
                           <Link href="tel:+918429812424">+91 842 981 2424</Link>
+                          <Link href="tel:+918429962424">+91 842 996 2424</Link>
+                          </div>
                         </span>
                       </li>
+                    
                       <li className="footer-widget-list-single-item">
                         <span className="footer-widget-list-icon">
                           <i className="icon-envelope"></i>
@@ -188,7 +193,7 @@ const FooterAreaFive = () => {
                           <span className="footer-widget-list-text-top">
                             Email Us
                           </span>
-                          <Link href="mailto:contact@example.com">
+                          <Link href="mailto:holynepalyatra@gmail.com">
                             holynepalyatra@gmail.com
                           </Link>
                         </span>
@@ -201,7 +206,7 @@ const FooterAreaFive = () => {
                           <span className="footer-widget-list-text-top">
                             Our office
                           </span>
-                          <Link href="/contact">Opp. Gorakhpur Railway Station</Link>
+                          <Link href="/contact">Shop No. 1 Gorakhnath Road Opposite Gorakhnath Temple Gorakhpur 273015</Link>
                         </span>
                       </li>
                     </ul>

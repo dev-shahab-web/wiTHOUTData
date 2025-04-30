@@ -24,7 +24,7 @@ const BreadCrumbTwo = ({ titleOne, titleTwo }: TProps) => {
                     <div className="bd-breadcrumb-list">
                       <span>
                         <Link href="/">
-                          <i className="icon-home"></i>Tourigo
+                          <i className="icon-home"></i>HolyNepalYatra
                         </Link>
                       </span>
                       <span>{titleTwo}</span>
