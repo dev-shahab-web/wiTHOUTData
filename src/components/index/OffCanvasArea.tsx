@@ -81,13 +81,13 @@ const OffCanvasArea = () => {
                   </li>
                   <li className="d-flex align-items-center gap-10">
                     <div className="offcanvas-contact-icon">
-                      <Link href="mailto:support@tourigo.com">
+                      <Link href="mailto:holynepalyatra@gmail.com">
                         <i className="fal fa-envelope"></i>
                       </Link>
                     </div>
                     <div className="offcanvas-contact-text">
-                      <Link href="mailto:support@tourigo.com">
-                        support@tourigo.com
+                      <Link href="mailto:holynepalyatra@gmail.com">
+                      holynepalyatra@gmail.com
                       </Link>
                     </div>
                   </li>

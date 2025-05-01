@@ -77,7 +77,7 @@ const TermsConditions = () => {
                                         contact us at</p>
 
                                     <ul>
-                                        <li>Email: <span><Link href="mailto:contact@tourigo.com">contact@tourigo.com</Link></span></li>
+                                        <li>Email: <span><Link href="mailto:holynepalyatra@gmail.com">holynepalyatra@gmail.com</Link></span></li>
                                     </ul>
 
                                     <div className="policy-address">
