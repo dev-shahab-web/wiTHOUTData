@@ -95,7 +95,7 @@ const SidebarMain = () => {
                   </li>
                   <li className="d-flex align-items-center gap-10">
                     <div className="offcanvas-contact-icon">
-                      <Link href="mailto:support@tourigo.com">
+                      <Link href="mailto:holynepalyatra@gmail.com">
                         <i className="fal fa-envelope"></i>
                       </Link>
                     </div>

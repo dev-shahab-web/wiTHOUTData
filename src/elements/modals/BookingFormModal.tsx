@@ -18,8 +18,8 @@ const BookingFormModal = () => {
   const [adultCount, setAdultCount] = useState(0);
   const [infant, setInfant] = useState(0);
   const decressCount = () => {
-    if (adultCount === 1) {
-      setAdultCount(1);
+    if (adultCount === 0) {
+      setAdultCount(0);
     } else {
       setAdultCount(adultCount - 1);
     }
@@ -29,8 +29,8 @@ const BookingFormModal = () => {
   };
 
   const decressInfantCount = () => {
-    if (infant === 1) {
-      setInfant(1);
+    if (infant === 0) {
+      setInfant(0);
     } else {
       setInfant(infant - 1);
     }
@@ -51,12 +51,10 @@ const BookingFormModal = () => {
     if (
       dateRange[0] == null ||
       dateRange[1] == null ||
-      niceSelectData == "no-data" ||
-      adultCount === 0 ||
-      infant === 0
+      adultCount === 0 
     ) {
       const toastId = toast.loading("");
-      toast.error(`Select Date Range And Age`, { id: toastId, duration: 1000 });
+      toast.error(`Select Date Range And Minimum One Adult`, { id: toastId, duration: 1000 });
     } else {
       dispatch(booking_product(myData));
       router.push("/booking");
@@ -163,9 +161,7 @@ const BookingFormModal = () => {
               <div className="modal-footer">
                 {dateRange[0] == null ||
                 dateRange[1] == null ||
-                niceSelectData == "no-data" ||
-                adultCount === 0 ||
-                infant === 0 ? (
+                adultCount === 0 ? (
                   <>
                     {" "}
                     <button

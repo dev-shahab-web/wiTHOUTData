@@ -303,7 +303,7 @@ const BookingComponentForm = () => {
                   <Link className="theme-text" href="/terms-conditions">
                     Terms and Conditions
                   </Link>{" "}
-                  {`set forth by tourigo.com and the privacy policy of Viator. Take a moment to review our Privacy Statement to understand how we handle and protectyour personal information throughout your booking journey and beyond."`}
+                  {`set forth by holynepalyatra.com and the privacy policy of Viator. Take a moment to review our Privacy Statement to understand how we handle and protectyour personal information throughout your booking journey and beyond."`}
                 </p>
                 <span>
                   <Link className="theme-text" href="/privacy-policy">

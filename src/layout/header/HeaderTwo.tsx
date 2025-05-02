@@ -41,7 +41,7 @@ const HeaderTwo = () => {
                       <Image
                         src={HeaderLogo}
                         loader={imageLoader}
-                        style={{ width: "100%", height: "60px", scale: isMobile ? 1.5 : 2.1 }}
+                        style={{ width: "100%", height: "60px", scale: isMobile ? 1.5 : 2.1, marginLeft: isMobile ? '24px': '0px' }}
                         alt="logo not found"
                       />
                     </Link>

@@ -48,12 +48,12 @@ const TeamDetails = ({ id }: idType) => {
                       </li>
                       <li>
                         <span className="team-label">Website : </span>
-                        <Link href="#">www.tourigo.com</Link>
+                        <Link href="#">www.holynepalyatra.com</Link>
                       </li>
                       <li>
                         <span className="team-label">Email : </span>
-                        <Link href="mailto:support@tourigo.com">
-                          support@tourigo.com
+                        <Link href="mailto:holynepalyatra@gmail.com">
+                        holynepalyatra@gmail.com
                         </Link>
                       </li>
                       <li>
