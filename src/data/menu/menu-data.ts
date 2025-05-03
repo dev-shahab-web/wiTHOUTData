@@ -11,7 +11,7 @@ const menu_data: MenuType[] = [
     hasDropdown: false,
     children: false,
     active: true,
-    title: "Home",
+    title: "Home-test",
     pluseIncon: true,
     link: "/",
     // previewImg: true,
