@@ -1,7 +1,7 @@
 import { ITourDataType } from "@/interFace/interFace";
-import tourImgOne from "../../public/assets/images/tour/tour-img-1.png";
-import tourImgTwo from "../../public/assets/images/tour/tour-img-2.png";
-import tourImgThree from "../../public/assets/images/tour/tour-img-3.png";
+import tourImgOne from "../../public/assets/images/tour/Top Trending Packages 01.png";
+import tourImgTwo from "../../public/assets/images/tour/Top Trending Packages 02.png";
+import tourImgThree from "../../public/assets/images/tour/Top Trending Packages 03.png";
 import tourImgFour from "../../public/assets/images/tour/tour-img-4.png";
 import tourImgFive from "../../public/assets/images/tour/tour-img-5.png";
 import tourImgSix from "../../public/assets/images/tour/tour-img-6.png";

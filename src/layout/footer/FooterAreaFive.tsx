@@ -114,7 +114,19 @@ const FooterAreaFive = () => {
                   <div className="footer-widget-links has-white">
                     <ul>
                       <li className="underline-two">
+                        <Link href="/">Home</Link>
+                      </li>
+                      <li className="underline-two">
                         <Link href="/about">About Us</Link>
+                      </li>
+                      <li className="underline-two">
+                        <Link href="/tour-listing-three">Packages</Link>
+                      </li>
+                      <li className="underline-two">
+                        <Link href="/contact">Terms & Conditions</Link>
+                      </li>
+                      <li className="underline-two">
+                        <Link href="/contact">Privacy Policy</Link>
                       </li>
                       <li className="underline-two">
                         <Link href="/contact">Contact Now</Link>
@@ -122,26 +134,25 @@ const FooterAreaFive = () => {
                       {/* <li className="underline-two">
                         <Link href="/team">Travel Guides</Link>
                       </li> */}
-                      <li className="underline-two">
+                      {/* <li className="underline-two">
                         <Link href="/tour-details">Traveler Review</Link>
                         <span className="bd-badge warning">New</span>
                       </li>
                       <li className="underline-two">
                         <Link href="/tour-listing-three">Packages</Link>
-                      </li>
+                      </li> */}
                     </ul>
                   </div>
                 </div>
               </div>
               <div className="col-xxl-4 col-xl-4 col-lg-6 col-md-6">
                 <div className="footer-widget footer-4-col-3">
-                  <h5 className="footer-widget-title white-text">Newsletter</h5>
+                  <h5 className="footer-widget-title white-text">Our Office</h5>
                   <div className="footer-widget-content">
                     <p>
-                      Subscribe our newsletter to get our latest <br /> update &
-                      news.
+                      <Link href="/contact">Shop No. 1010, Gorakhnath Road, Gorakhpur, Uttar Pradesh, Pin Code - 273015</Link>
                     </p>
-                    <div className="footer-form mb-15">
+                    {/* <div className="footer-form mb-15">
                       <form action="#">
                         <div className="footer-subscribe">
                           <input type="email" placeholder="Email address" />
@@ -151,8 +162,8 @@ const FooterAreaFive = () => {
                           </button>
                         </div>
                       </form>
-                    </div>
-                    <div className="footer-form-check">
+                    </div> */}
+                    {/* <div className="footer-form-check">
                       <label className="footer-form-check-label">
                         <input type="checkbox" />
                         <svg viewBox="0 0 64 64" height="2em" width="2em">
@@ -164,7 +175,7 @@ const FooterAreaFive = () => {
                         </svg>{" "}
                         I agree to all terms and policies
                       </label>
-                    </div>
+                    </div> */}
                   </div>
                 </div>
               </div>
@@ -202,7 +213,7 @@ const FooterAreaFive = () => {
                           </Link>
                         </span>
                       </li>
-                      <li className="footer-widget-list-single-item">
+                      {/* <li className="footer-widget-list-single-item">
                         <span className="footer-widget-list-icon">
                           <i className="icon-location-fill"></i>
                         </span>
@@ -212,7 +223,7 @@ const FooterAreaFive = () => {
                           </span>
                           <Link href="/contact">Shop No. 1 Gorakhnath Road Opposite Gorakhnath Temple Gorakhpur 273015</Link>
                         </span>
-                      </li>
+                      </li> */}
                     </ul>
                   </div>
                 </div>

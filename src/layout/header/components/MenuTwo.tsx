@@ -6,7 +6,7 @@ import { imageLoader } from "@/hooks/image-loader";
 const MenuTwo = () => {
   return (
     <>
-      <ul>
+      <ul style={{display: "flex", flexDirection: "row", gap: "40px"}}>
         {menu_data.map((item) => (
           <li
             key={item.id}
