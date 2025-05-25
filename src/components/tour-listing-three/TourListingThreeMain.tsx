@@ -6,7 +6,7 @@ import Breadcrumb from '../common/breadcrumb/BreadCrumb';
 const TourListingThreeMain = () => {
     return (
         <>
-            <Breadcrumb titleOne='Tour Listing Three' titleTwo='Tour Listing Three'/>
+            <Breadcrumb titleOne='Tour Packages' titleTwo='Tour Packages'/>
             <TourListingAreaThree />
             <CtaTourListing />
         </>
