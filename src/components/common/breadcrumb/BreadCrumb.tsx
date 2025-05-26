@@ -8,11 +8,11 @@ type TProps = {
 const Breadcrumb = ({ titleOne, titleTwo }: TProps) => {
   return (
     <>
-      <section className="bd-breadcrumb-area p-relative fix">
+      <section className="bd-breadcrumb-area p-relative fix" style={{height: "396px"}}>
         {/*breadcrumb background image*/}
         <div
           className="bd-breadcrumb-bg"
-          style={{ backgroundImage: `url(${breadcrumbBg.src})` }}
+          style={{ backgroundImage: `url(${breadcrumbBg.src})`, height: "396px" }}
         ></div>
         <div className="bd-breadcrumb-wrapper p-relative">
           <div className="container">
