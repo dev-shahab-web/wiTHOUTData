@@ -32,9 +32,9 @@ const SidebarSearchArea = ({ placeHolderTextData }: propsType) => {
             <SidebarBookingForm />
           </div>
           <div className="sidebar-widget-divider"></div>
-          <SidebarBlogList />
+          {/* <SidebarBlogList /> */}
         </div>
-        <div className="sidebar-widget-banner p-relative">
+        {/* <div className="sidebar-widget-banner p-relative">
           <div className="sidebar-widget-thumb p-relative">
             <Image
               src={sideBarBg}
@@ -61,7 +61,7 @@ const SidebarSearchArea = ({ placeHolderTextData }: propsType) => {
               </Link>
             </div>
           </div>
-        </div>
+        </div> */}
       </aside>
     </>
   );
