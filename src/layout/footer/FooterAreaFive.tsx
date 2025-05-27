@@ -25,9 +25,9 @@ const FooterAreaFive = () => {
                       alt="image"
                     />
                   </div>
-                  <h5 className="footer-support-title white-text">
+                  <h6 className="footer-support-title white-text">
                     Need Support for tour & travels?
-                  </h5>
+                  </h6>
                   <div className="footer-support-btn">
                     <Link
                       className="bd-icon-btn has-big hover-style"
@@ -49,9 +49,9 @@ const FooterAreaFive = () => {
                       alt="image"
                     />
                   </div>
-                  <h5 className="footer-support-title white-text">
+                  <h6 className="footer-support-title white-text">
                     Ready to Get Started With Vacations!
-                  </h5>
+                  </h6>
                   <div className="footer-support-btn">
                     <Link
                       className="bd-icon-btn has-big hover-style"

@@ -552,7 +552,7 @@ export const tourData: ITourDataType[] = [
 
   {
     id: 1,
-    img: tourImgOne,
+    img: tourImgTwo,
     tourLocation: "Kathmandu - Pokhara - Muktinath",
     tourRating: "4.8",
     tourRatingCount: 150,
@@ -563,7 +563,7 @@ export const tourData: ITourDataType[] = [
   },
   {
     id: 2,
-    img: tourImgTwo,
+    img: tourImgThree,
     tourLocation: "Gorakhpur - Pokhara - Kathmandu",
     tourRating: "4.7",
     tourRatingCount: 120,
@@ -574,7 +574,7 @@ export const tourData: ITourDataType[] = [
   },
   {
     id: 3,
-    img: tourImgThree,
+    img: tourImgOne,
     tourLocation: "Gorakhpur - Pokhara - Kathmandu - Lumbini",
     tourRating: "4.9",
     tourRatingCount: 200,
@@ -585,7 +585,7 @@ export const tourData: ITourDataType[] = [
   },
   {
     id: 4,
-    img: tourImgFour,
+    img: tourImgTwo,
     tourLocation: "Gorakhpur - Pokhara - Kathmandu - Chitwan",
     tourRating: "4.6",
     tourRatingCount: 95,
@@ -596,7 +596,7 @@ export const tourData: ITourDataType[] = [
   },
   {
     id: 5,
-    img: tourImgFive,
+    img: tourImgOne,
     tourLocation: "Gorakhpur - Pokhara - Kathmandu - Lumbini",
     tourRating: "4.8",
     tourRatingCount: 110,
@@ -607,7 +607,7 @@ export const tourData: ITourDataType[] = [
   },
   {
     id: 6,
-    img: tourImgSix,
+    img: tourImgThree,
     tourLocation: "Kathmandu - Pokhara - Muktinath",
     tourRating: "5.0",
     tourRatingCount: 160,
@@ -618,7 +618,7 @@ export const tourData: ITourDataType[] = [
   },
   {
     id: 7,
-    img: tourImgSeven,
+    img: tourImgOne,
     tourLocation: "Gorakhpur - Pokhara - Kathmandu - Chitwan",
     tourRating: "4.7",
     tourRatingCount: 140,
@@ -629,7 +629,7 @@ export const tourData: ITourDataType[] = [
   },
   {
     id: 8,
-    img: tourImgEight,
+    img: tourImgThree,
     tourLocation: "Gorakhpur - Pokhara - Kathmandu - Lumbini",
     tourRating: "4.9",
     tourRatingCount: 180,
@@ -640,7 +640,7 @@ export const tourData: ITourDataType[] = [
   },
   {
     id: 9,
-    img: tourImgNine,
+    img: tourImgTwo,
     tourLocation: "Gorakhpur - Pokhara - Kathmandu",
     tourRating: "4.5",
     tourRatingCount: 100,
@@ -651,7 +651,7 @@ export const tourData: ITourDataType[] = [
   },
   {
     id: 10,
-    img: tourImgTen,
+    img: tourImgOne,
     tourLocation: "Kathmandu - Pokhara - Muktinath",
     tourRating: "4.8",
     tourRatingCount: 130,

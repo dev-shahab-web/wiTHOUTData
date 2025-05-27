@@ -18091,6 +18091,7 @@ input:checked + .switch:before {
   border-radius: 0 0 10px 10px;
   border: 1px solid var(--bd-border-primary);
   background-color: var(--bd-flash-white);
+  height: 50%;
 }
 .tour-divider {
   border-bottom: 1px solid var(--bd-border-primary);
