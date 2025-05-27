@@ -24,6 +24,13 @@ const menu_data: MenuType[] = [
     // ],
   },
   {
+    id: 7,
+    hasDropdown: false,
+    active: true,
+    title: "About-Us",
+    link: "/about",
+  },
+  {
     id: 2,
     hasDropdown: false,
     active: true,
@@ -304,13 +311,7 @@ const menu_data: MenuType[] = [
     title: "Contact",
     link: "/contact",
   },
-  {
-    id: 7,
-    hasDropdown: false,
-    active: true,
-    title: "About-Us",
-    link: "/about",
-  },
+  
 ];
 
 export default menu_data;

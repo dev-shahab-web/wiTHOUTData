@@ -34,13 +34,13 @@ const TrendsArea = () => {
             </div>
           </div>
           <div className="row gy-24">
-            <div className="col-xxl-3 col-xl-3 col-lg-4 order-lg-0 order-1">
-              <div className="cta-wrapper cta-style-four">
-                <div className="cta-thumb-four">
+            <div className="col-xxl-3 col-xl-3 col-lg-4 order-lg-0 order-1" style={{height: "420px"}}>
+              <div className="cta-wrapper cta-style-four" style={{height: "420px"}}>
+                <div className="cta-thumb-four" style={{height: "420px"}}>
                   <Image
                     src={ctaImgFour}
                     loader={imageLoader}
-                    style={{ width: "100%", height: "auto" }}
+                    style={{ width: "100%", height: "420px" }}
                     alt="image"
                   />
                 </div>
@@ -57,7 +57,7 @@ const TrendsArea = () => {
                       <span className="bd-primary-btn-arrow arrow-right">
                         <i className="fa-regular fa-arrow-right"></i>
                       </span>
-                      <span className="bd-primary-btn-text">Book Now</span>
+                      <span className="bd-primary-btn-text">Call Now</span>
                       <span className="bd-primary-btn-circle"></span>
                       <span className="bd-primary-btn-arrow arrow-left">
                         <i className="fa-regular fa-arrow-right"></i>
@@ -104,6 +104,7 @@ const TrendsArea = () => {
                         <SwiperSlide
                           key={item.id}
                           className="custom-swiper-slide"
+                          style={{ height: "420px" }}
                         >
                           <TourSingleCard
                             tour={item}
