@@ -50,7 +50,7 @@ const SidebarMain = () => {
               </div> */}
               <div className="mobile-menu fix mb-25 mean-container">
                 <div className="mean-bar">
-                  <nav className="mean-nav">
+                  <nav className="mean-nav" onClick={toggleSideMenu}>
                     <MobileMenu />
                   </nav>
                 </div>
