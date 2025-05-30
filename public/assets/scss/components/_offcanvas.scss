@@ -27,7 +27,7 @@
             width: 400px;
         }
         @media #{$xs}{
-            width: 100%;
+            width: 75%;
         }
         &.info-open {
             opacity: 1;
