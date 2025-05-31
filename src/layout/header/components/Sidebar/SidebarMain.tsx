@@ -74,8 +74,7 @@ const SidebarMain = () => {
                     </div>
                     <div className="offcanvas-contact-text">
                       <Link target="_blank" href="#">
-                        Shop No. 1 Gorakhnath Road Opposite Gorakhnath Temple
-                        Gorakhpur 273015
+                      Shop No. 1010, Gorakhnath Road, Gorakhpur, Uttar Pradesh, Pin Code - 273015
                       </Link>
                     </div>
                   </li>

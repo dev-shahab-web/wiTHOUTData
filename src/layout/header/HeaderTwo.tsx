@@ -16,10 +16,10 @@ const HeaderTwo = () => {
     <>
       <header>
         <div
-          id="header-sticky"
-          className={`header-area header-style-four ${
+            className={`header-area header-style header-style-two ${
             scrollDirection === "down" ? "bd-sticky" : ""
           }`}
+          id="header-sticky"
         >
           <div className="container">
             <div className="mega-menu-wrapper p-relative">
@@ -35,6 +35,7 @@ const HeaderTwo = () => {
                           height: "60px",
                           scale: isMobile ? 1.5 : 2.1,
                           marginLeft: isMobile ? "24px" : "0px",
+                          marginTop: isMobile ? "28px" : "14px",
                         }}
                         alt="logo not found"
                       />

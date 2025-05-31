@@ -40,8 +40,9 @@ const TourDetails = ({ id }: idType) => {
                       <div className="tour-details-meta d-flex flex-wrap gap-10 align-items-center justify-content-between mb-20">
                         <div className="tour-details-price">
                           <h4 className="price-title">
-                            ${data?.tourPrice}
-                            <span>/Per Person</span>
+                            ₹₹₹₹
+                            {/* ${data?.tourPrice} */}
+                            <span>/Call now for price details</span>
                           </h4>
                         </div>
                         <div className="tour-details-meta-right d-flex flex-wrap gap-10 align-items-center justify-content-between">
@@ -124,7 +125,7 @@ const TourDetails = ({ id }: idType) => {
                               Location
                             </p>
                             <span className="tour-details-destination-info-bottom">
-                              Brasov, Romania
+                             {data?.tourLocation ? data?.tourLocation : "Kathmandu, Nepal" }
                             </span>
                           </div>
                         </div>

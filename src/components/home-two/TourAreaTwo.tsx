@@ -19,7 +19,7 @@ const TourAreaTwo = () => {
           <div className="row gy-24">
             {tourData &&
               tourData
-                .slice(6, 14)
+                .slice(0, 8)
                 .map((item) => (
                   <TourSingleCard
                     key={item?.id}

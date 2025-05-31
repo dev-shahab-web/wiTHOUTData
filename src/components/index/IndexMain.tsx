@@ -15,6 +15,7 @@ import TestimonialAreaFour from "../home-four/TestimonialAreaFour";
 import TestimonialAreaTwo from "../home-two/TestimonialAreaTwo";
 import FooterAreaFive from "@/layout/footer/FooterAreaFive";
 import TrendsArea from "../home-two/TrendsArea";
+import TourAreaTwo from "../home-two/TourAreaTwo";
 
 const IndexMain = () => {
   return (
@@ -22,7 +23,8 @@ const IndexMain = () => {
       {/* <OffCanvasArea /> */}
       <BannerTwo />
       <ChooseArea />
-      <TrendsArea />
+       <TourAreaTwo />
+      {/* <TrendsArea /> */}
       {/* <DestinationArea /> */}
       <CounterAreaFive />
       <TestimonialAreaTwo />
