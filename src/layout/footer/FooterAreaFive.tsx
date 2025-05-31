@@ -7,8 +7,10 @@ import logoWhite from "../../../public/assets/images/logo/logo.png";
 import paymentOptionWhiteImg from "../../../public/assets/images/icons/payment-option-white.png";
 import { imageLoader } from "@/hooks/image-loader";
 import Link from "next/link";
+import useIsMobile from "@/hooks/useIsMobile";
 
 const FooterAreaFive = () => {
+   const isMobile = useIsMobile();
   return (
     <>
       <footer className="bd-footer-area theme-bg-secondary">
@@ -21,16 +23,18 @@ const FooterAreaFive = () => {
                     <Image
                       src={supportImg}
                       loader={imageLoader}
-                      style={{ width: "100", height: "auto" }}
+                      style={isMobile ? {width: "45px", height: "auto"} :{ width: "100", height: "auto" }}
                       alt="image"
                     />
                   </div>
-                  <h6 className="footer-support-title white-text">
+                  <h6
+  className={`footer-support-title white-text${isMobile ? " fs-14" : ""}`}
+>
                     Need Support for tour & travels?
                   </h6>
                   <div className="footer-support-btn">
                     <Link
-                      className="bd-icon-btn has-big hover-style"
+                      className="bd-icon-btn has-big hover-style " style={isMobile ? {fontSize: "16px", width:"30px", height: "30px"}: {}}
                       href="contact"
                       target="_blank"
                     >
@@ -45,16 +49,19 @@ const FooterAreaFive = () => {
                     <Image
                       src={supportImgTwo}
                       loader={imageLoader}
-                      style={{ width: "auto", height: "auto" }}
+                      style={isMobile ? {width: "50px", height: "auto"} :{ width: "100", height: "auto" }}
                       alt="image"
                     />
                   </div>
-                  <h6 className="footer-support-title white-text">
+                  <h6
+  className={`footer-support-title white-text${isMobile ? " fs-14" : ""}`}
+>
                     Ready to Get Started With Vacations!
                   </h6>
                   <div className="footer-support-btn">
                     <Link
                       className="bd-icon-btn has-big hover-style"
+                      style={isMobile ? {fontSize: "16px", width:"30px", height: "30px"}: {}}
                       href="destinations-details-right"
                       target="_blank"
                     >
