@@ -80,12 +80,13 @@ const FooterAreaFive = () => {
                 <div className="footer-widget footer-4-col-1">
                   <div className="footer-widget-logo mb-25">
                     <Link href="/">
-                      <Image
+                      {/* <Image
                         src={logoWhite}
                         loader={imageLoader}
                         style={{ width: "auto", height: "auto" }}
                         alt="logo not found"
-                      />
+                      /> */}
+                       <h5 className="footer-widget-title white-text">Holy Nepal Yatra</h5>
                     </Link>
                   </div>
                   <div className="footer-widget-content">
@@ -130,10 +131,10 @@ const FooterAreaFive = () => {
                         <Link href="/tour-listing-three">Packages</Link>
                       </li>
                       <li className="underline-two">
-                        <Link href="/contact">Terms & Conditions</Link>
+                        <Link href="/terms-conditions">Terms & Conditions</Link>
                       </li>
                       <li className="underline-two">
-                        <Link href="/contact">Privacy Policy</Link>
+                        <Link href="/privacy-policy">Privacy Policy</Link>
                       </li>
                       <li className="underline-two">
                         <Link href="/contact">Contact Now</Link>
