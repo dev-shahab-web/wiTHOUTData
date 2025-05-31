@@ -6,23 +6,12 @@ import HeaderLogo from "../../../public/assets/images/logo/logo.png";
 import { imageLoader } from "@/hooks/image-loader";
 import useGlobalContext from "@/hooks/use-context";
 import MenuTwo from "./components/MenuTwo";
+import useIsMobile from "@/hooks/useIsMobile";
 
 const HeaderTwo = () => {
   const { toggleSideMenu, scrollDirection } = useGlobalContext();
-  const [isMobile, setIsMobile] = useState(false);
+  const isMobile = useIsMobile();
 
-  useEffect(() => {
-    const handleResize = () => {
-      setIsMobile(window.innerWidth <= 768); // Check if screen width is <= 768px
-    };
-
-    // Add event listener for resize
-    window.addEventListener("resize", handleResize);
-    handleResize(); // Run initially
-
-    // Cleanup event listener on component unmount
-    return () => window.removeEventListener("resize", handleResize);
-  }, []);
   return (
     <>
       <header>
@@ -41,7 +30,12 @@ const HeaderTwo = () => {
                       <Image
                         src={HeaderLogo}
                         loader={imageLoader}
-                        style={{ width: "100%", height: "60px", scale: isMobile ? 1.5 : 2.1, marginLeft: isMobile ? '24px': '0px' }}
+                        style={{
+                          width: "100%",
+                          height: "60px",
+                          scale: isMobile ? 1.5 : 2.1,
+                          marginLeft: isMobile ? "24px" : "0px",
+                        }}
                         alt="logo not found"
                       />
                     </Link>
