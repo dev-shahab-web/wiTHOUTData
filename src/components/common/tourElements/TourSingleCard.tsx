@@ -28,7 +28,7 @@ const TourSingleCard = ({
       {isparentClass === true ? (
         <>
           <div className={className}>
-            <div className={tourWrapperClass}>
+            <div className={tourWrapperClass} style={{ height: "500px" }}>
               <div className="p-relative">
                 <div className="tour-thumb image-overly">
                   <Link href={`/tour-details/${tour?.id}`}>
@@ -41,9 +41,9 @@ const TourSingleCard = ({
                   </Link>
                 </div>
                 <div className="tour-meta d-flex align-items-center justify-content-between">
-                  <button className="tour-favorite tour-like">
+                  {/* <button className="tour-favorite tour-like">
                     <i className="icon-heart"></i>
-                  </button>
+                  </button> */}
                   <div className="tour-location">
                     <span>
                       <Link href={`/tour-details/${tour?.id}`}>
@@ -54,7 +54,7 @@ const TourSingleCard = ({
                   </div>
                 </div>
               </div>
-              <div className="tour-content">
+              <div className="tour-content" style={{display: "flex", flexDirection: "column", alignContent: "space-between", justifyContent: "space-between", height: "50%" }}>
                 <div className="tour-rating d-flex align-items-center gap-10 mb-10">
                   <div className="tour-rating-icon fs-14 d-flex rating-color">
                     <GetRatting averageRating={rating} />
@@ -70,9 +70,9 @@ const TourSingleCard = ({
                     {tour.tourTitle}
                   </Link>
                 </h5>
-                <span className="tour-price b3">
+                {/* <span className="tour-price b3">
                   ${tour.tourPrice?.toLocaleString("en-US")}
-                </span>
+                </span> */}
                 <div className="tour-divider"></div>
 
                 <div className="tour-meta d-flex align-items-center justify-content-between">
@@ -115,9 +115,9 @@ const TourSingleCard = ({
                 </Link>
               </div>
               <div className="tour-meta d-flex align-items-center justify-content-between">
-                <button className="tour-favorite tour-like">
+                {/* <button className="tour-favorite tour-like">
                   <i className="icon-heart"></i>
-                </button>
+                </button> */}
                 <div className="tour-location">
                   <span>
                     <Link href={`/tour-details/${tour?.id}`}>

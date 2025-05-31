@@ -3,11 +3,11 @@ import { TNiceSelectData } from "@/interFace/interFace";
 export const selectTourType: TNiceSelectData[] = [
     {
         id: 1,
-        option: "Beach"
+        option: "Pilgrimage"
     },
     {
         id: 2,
-        option: "Discovery"
+        option: "Group Tour"
     },
     {
         id: 3,
@@ -15,7 +15,7 @@ export const selectTourType: TNiceSelectData[] = [
     },
     {
         id: 4,
-        option: "Moutain"
+        option: "Mountain"
     },
     {
         id: 5,
