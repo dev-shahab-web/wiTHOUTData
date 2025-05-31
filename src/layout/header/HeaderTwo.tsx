@@ -35,7 +35,7 @@ const HeaderTwo = () => {
                           height: "60px",
                           scale: isMobile ? 1.5 : 2.1,
                           marginLeft: isMobile ? "24px" : "0px",
-                          marginTop: isMobile ? "28px" : "14px",
+                          // marginTop: isMobile ? "28px" : "14px",
                         }}
                         alt="logo not found"
                       />
