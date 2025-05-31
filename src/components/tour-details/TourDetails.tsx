@@ -130,11 +130,11 @@ const TourDetails = ({ id }: idType) => {
                         </div>
                       </div>
                       {/*tab area start*/}
-                      <TourDetailTabArea />
+                      <TourDetailTabArea data={data} />
                       {/*tab area end*/}
                       {/*tour area start*/}
                       <div className="tour-details-related-tour mb-35">
-                        <h4 className="mb-20">Related Tour</h4>
+                        {/* <h4 className="mb-20">Related Tour</h4> */}
                         <div className="row gy-24">
                           {tourDetailsData?.map((item) => (
                             <TourSingleCard
