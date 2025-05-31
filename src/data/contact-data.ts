@@ -18,8 +18,8 @@ export const contactData: IContactData[] = [
     {
         id: 3,
         title: 'Our Location',
-        subTitleOne: 'Shop No. 1 Gorakhnath Road Opposite',
-        subTitleTwo: 'Gorakhnath Temple Gorakhpur 273015',
+        subTitleOne: 'Shop No. 1010 Gorakhnath Road',
+        subTitleTwo: 'Gorakhpur, Uttar Pradesh, Pin code 273015',
         icon: 'icon-location-fill',
     },
     // {

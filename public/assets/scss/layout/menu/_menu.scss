@@ -527,7 +527,7 @@ color: var(--bd-primary);
 // header menu three
 .main-menu-three {
     &.main-menu li a {
-        color: var(--bd-heading);
+        // color: var(--bd-white);
         &::before {
             background-color: var(--bd-primary);
         }

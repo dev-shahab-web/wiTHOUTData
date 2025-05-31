@@ -13,24 +13,24 @@ export const testimonialData: ITestimonialDataType[] = [
     description:
       "Visiting Machu Picchu was an absolute dream come true! The ancient ruins are truly mesmerizing, and the views are breathtaking. Our tour guide was knowledgeable and made the experience even more enriching.",
     avatarImg: clientOne,
-    avatarTitle: "Eiola J. Farr",
-    info: "Business man",
+    avatarTitle: "Amit Sharma",
+    info: "Entrepreneur, Delhi",
   },
   {
     id: 2,
     description:
       "Santorini is a slice of heaven on Earth! The white-washed buildings against the backdrop of the azure Aegean Sea create a picture-perfect setting.",
     avatarImg: clientTwo,
-    avatarTitle: "Nikola Tesla",
-    info: "Frontend Developer",
+    avatarTitle: "Priya Nair",
+    info: "Frontend Developer, Kochi",
   },
   {
     id: 3,
     description:
       "Kyoto is a city that seamlessly blends tradition with modernity. The temples, shrines, and gardens are simply exquisite. Walking through the streets lined with cherry blossom trees felt like stepping into a fairytale.",
     avatarImg: clientThree,
-    avatarTitle: "Erick Belly",
-    info: "Writer",
+    avatarTitle: "Rahul Verma",
+    info: "Writer, Mumbai",
   },
   //home one end
   //home two start
@@ -39,40 +39,40 @@ export const testimonialData: ITestimonialDataType[] = [
     description:
       "Visiting Machu Picchu was an absolute dream come true to you! The ancient ruins are truly mesmerizing, and the views are breathtaking.",
     avatarImg: clientOne,
-    avatarTitle: "Ethan Mitchell",
-    info: "Data Scientist",
+    avatarTitle: "Lakshmi Menon",
+    info: "Data Scientist, Chennai",
   },
   {
     id: 5,
     description:
       "Santorini is a slice of heaven on Earth! The white-washed buildings against the backdrop of the azure Aegean Sea create a picture-perfect setting.",
     avatarImg: clientTwo,
-    avatarTitle: "Madison Turner",
-    info: "Surgeon",
+    avatarTitle: "Suresh Reddy",
+    info: "Surgeon, Hyderabad",
   },
   {
     id: 6,
     description:
       "Kyoto is a city that seamlessly blends tradition with modernity. The temples, shrines, and gardens are simply exquisite. The azure Aegean Sea create a picture-perfect setting.",
     avatarImg: clientThree,
-    avatarTitle: "Mason Rodriguez",
-    info: "Programmer",
+    avatarTitle: "Meera Pillai",
+    info: "Programmer, Bengaluru",
   },
   {
     id: 7,
     description:
       "Snorkeling in the Great Barrier Reef was an unforgettable experience! The vibrant coral reefs teeming with marine life left us in awe.",
     avatarImg: clientFour,
-    avatarTitle: "Lily Campbell",
-    info: "Lawyer",
+    avatarTitle: "Anil Kumar",
+    info: "Lawyer, Kathmandu",
   },
   {
     id: 8,
     description:
       "Going on safari in Serengeti National Park was a bucket list experience! Witnessing the annual migration of wildebeest and zebras was a spectacle like no other.",
     avatarImg: clientSix,
-    avatarTitle: "Carter White",
-    info: "Engineering Manager",
+    avatarTitle: "Sunita Joshi",
+    info: "Engineering Manager, Pokhara",
   },
   //home two end
   //home three start
@@ -81,32 +81,32 @@ export const testimonialData: ITestimonialDataType[] = [
     description:
       "Visiting Machu Picchu was an absolute dream come true! The ancient ruins are truly mesmerizing, and the views are breathtaking.",
     avatarImg: clientOne,
-    avatarTitle: "Michel Jordan",
-    info: "Software Developer",
+    avatarTitle: "Vikram Singh",
+    info: "Software Developer, Biratnagar",
   },
   {
     id: 10,
     description:
       "Santorini is a slice of heaven on Earth! The white-washed buildings against the backdrop of the azure Aegean Sea create a picture-perfect setting.",
     avatarImg: clientTwo,
-    avatarTitle: "Shane Watson",
-    info: "Business man",
+    avatarTitle: "Deepa Shetty",
+    info: "Businesswoman, Patan",
   },
   {
     id: 11,
     description:
       "Kyoto is a city that seamlessly blends tradition with modernity. The temples, shrines, and gardens are simply exquisite.",
     avatarImg: clientThree,
-    avatarTitle: "Eiola J. Farr",
-    info: "Business man",
+    avatarTitle: "Arjun Das",
+    info: "Businessman, Bhaktapur",
   },
   {
     id: 12,
     description:
       "Snorkeling in the Great Barrier Reef was an unforgettable experience! The vibrant coral reefs teeming with marine life left us in awe.",
     avatarImg: clientFive,
-    avatarTitle: "Sofia Miler",
-    info: "Fashion Model",
+    avatarTitle: "Kavya Subba",
+    info: "Fashion Model, Lumbini",
   },
   //home three end
   //home four start
@@ -115,8 +115,8 @@ export const testimonialData: ITestimonialDataType[] = [
     description:
       "Visiting Machu Picchu was an absolute dream come true! The ancient ruins are truly mesmerizing, and the views are breathtaking.",
     avatarImg: clientOne,
-    avatarTitle: "Elon Mask",
-    info: "CEO, DOGE COIN",
+    avatarTitle: "Ramesh Bhat",
+    info: "CEO, Kathmandu",
     rating: 5,
   },
   {
@@ -124,8 +124,8 @@ export const testimonialData: ITestimonialDataType[] = [
     description:
       "Santorini is a slice of heaven on Earth! The white-washed buildings against the backdrop of the azure Aegean Sea create a picture-perfect setting.",
     avatarImg: clientTwo,
-    avatarTitle: "Micheal Alert",
-    info: "Service Holder",
+    avatarTitle: "Ananya Rao",
+    info: "Service Holder, Pokhara",
     rating: 4.5,
   },
   {
@@ -133,8 +133,8 @@ export const testimonialData: ITestimonialDataType[] = [
     description:
       "Kyoto is a city that seamlessly blends tradition with modernity. The temples, shrines, and gardens are simply exquisite.",
     avatarImg: clientThree,
-    avatarTitle: "Eiola J. Farr",
-    info: "Business man",
+    avatarTitle: "Sanjay Iyer",
+    info: "Businessman, Janakpur",
     rating: 3.5,
   },
   //home four end
@@ -144,8 +144,8 @@ export const testimonialData: ITestimonialDataType[] = [
     description:
       "Visiting Machu Picchu was an absolute dream come true! The ancient ruins are truly mesmerizing, and the views are breathtaking.",
     avatarImg: clientOne,
-    avatarTitle: "Noah Taylor",
-    info: "CEO, XYZ Group",
+    avatarTitle: "Manju Nair",
+    info: "CEO, XYZ Group, Kochi",
     rating: 5,
   },
   {
@@ -153,8 +153,8 @@ export const testimonialData: ITestimonialDataType[] = [
     description:
       "Santorini is a slice of heaven on Earth! The white-washed buildings against the backdrop of the azure Aegean Sea create a picture-perfect setting.",
     avatarImg: clientFive,
-    avatarTitle: "Isabella Wright",
-    info: "Fashion Model",
+    avatarTitle: "Rohit Menon",
+    info: "Fashion Model, Chitwan",
     rating: 4,
   },
   {
@@ -162,8 +162,8 @@ export const testimonialData: ITestimonialDataType[] = [
     description:
       "Kyoto is a city that seamlessly blends tradition with modernity. The temples, shrines, and gardens are simply exquisite.",
     avatarImg: clientThree,
-    avatarTitle: "Olivia Bennett",
-    info: "Fashion Model",
+    avatarTitle: "Sneha Pillai",
+    info: "Fashion Model, Dharan",
     rating: 4.5,
   },
   {
@@ -171,8 +171,8 @@ export const testimonialData: ITestimonialDataType[] = [
     description:
       "Banff National Park is a paradise for outdoor enthusiasts! The stunning landscapes, towering mountains, and crystal-clear lakes make it a haven for hikers and photographers.",
     avatarImg: clientFour,
-    avatarTitle: "Logan Foster",
-    info: "Student",
+    avatarTitle: "Ajay Thapa",
+    info: "Student, Pokhara",
     rating: 4.5,
   },
   //home five end
@@ -182,8 +182,8 @@ export const testimonialData: ITestimonialDataType[] = [
     description:
       "Lorem ipsum dolor amet is sit Lorem amet ametcon in sectetur suspe is ndisse. Lorem ipsum dolor sit amet in ipsum consectetur suspend isseLorem ipsum dolor sit amet consectetur into",
     avatarImg: clientOne,
-    avatarTitle: "Lucas Anderson",
-    info: "Data Scientist",
+    avatarTitle: "Siddharth Reddy",
+    info: "Data Scientist, Kathmandu",
     rating: 3,
   },
   {
@@ -191,16 +191,16 @@ export const testimonialData: ITestimonialDataType[] = [
     description:
       "Lorem ipsum dolor amet is sit Lorem amet ametcon in sectetur suspe is ndisse. Lorem ipsum dolor sit amet in ipsum consectetur suspend isseLorem ipsum dolor sit amet consectetur into",
     avatarImg: clientTwo,
-    avatarTitle: "Ava Brooks",
-    info: "DevOps Engineer",
+    avatarTitle: "Divya Krishnan",
+    info: "DevOps Engineer, Chennai",
   },
   {
     id: 22,
     description:
       "Lorem ipsum dolor amet is sit Lorem amet ametcon in sectetur suspe is ndisse. Lorem ipsum dolor sit amet in ipsum consectetur suspend isseLorem ipsum dolor sit amet consectetur into",
     avatarImg: clientThree,
-    avatarTitle: "Emma Phillips",
-    info: "Petroleum engineer",
+    avatarTitle: "Gopal Acharya",
+    info: "Petroleum Engineer, Birgunj",
   },
   //home about testimonial end
 ];
