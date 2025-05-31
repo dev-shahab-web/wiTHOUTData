@@ -6,21 +6,12 @@ interface niceSelectType {
 //location data
 export const selectLocationData: niceSelectType[] = [
   {
+    id: 1,
+    option: "Nepal",
+  },
+  {
     id: 2,
-    option: "Australia",
-  },
-  {
-    id: 3,
-    option: "Portugal",
-  },
-  {
-    id: 4,
-    option: "Maldives",
-  },
-  {
-    id: 5,
-    option: "India",
-  },
+    option: "Kailash Yatra",}
 ];
 
 //age data
