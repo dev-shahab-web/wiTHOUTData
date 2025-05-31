@@ -3,13 +3,13 @@ import { imageLoader } from "@/hooks/image-loader";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
-import tourImgNine from "../../../public/assets/images/tour/tour-img-9.png";
-import tourImgTwentyOne from "../../../public/assets/images/tour/tour-img-21.png";
-import tourImgTwentyTwo from "../../../public/assets/images/tour/tour-img-22.png";
+import tourImgOne from "../../../public/assets/images/tour/Top Trending Packages 01.png";
+import tourImgTwo from "../../../public/assets/images/tour/Top Trending Packages 02.png";
+import tourImgThree from "../../../public/assets/images/tour/Top Trending Packages 03.png";
 import { clientReviewData } from "@/data/client-review-data";
 import TourDetailsPostForm from "./TourDetailsPostFrom/TourDetailsPostForm";
 
-const TourDetailTabArea = () => {
+const TourDetailTabArea = ({data}: any) => {
   return (
     <>
       <div className="tour-details-nav-tabs mb-35">
@@ -279,22 +279,22 @@ const TourDetailTabArea = () => {
             <div className="tour-details-gallery mb-35">
               <h4 className="mb-20">Tour Galley</h4>
               <div className="row gy-24">
-                <div className="col-xxl-6 col-xl-6 col-lg-6 col-md-6">
+                {/* <div className="col-xxl-6 col-xl-6 col-lg-6 col-md-6">
                   <div className="tour-details-gallery-thumb image-hover-effect-two position-relative">
                     <Image
-                      src={tourImgTwentyOne}
+                      src={tourImgThree}
                       loader={imageLoader}
                       style={{ width: "100%", height: "auto" }}
                       alt="image"
                     />
                   </div>
-                </div>
+                </div> */}
                 <div className="col-xxl-6 col-xl-6 col-lg-6 col-md-6">
                   <div className="row gy-24">
                     <div className="col-xxl-12">
                       <div className="tour-details-gallery-thumb image-hover-effect-two position-relative">
                         <Image
-                          src={tourImgTwentyTwo}
+                          src={data?.img}
                           loader={imageLoader}
                           style={{ width: "100%", height: "auto" }}
                           alt="image"
@@ -304,7 +304,31 @@ const TourDetailTabArea = () => {
                     <div className="col-xxl-12">
                       <div className="tour-details-gallery-thumb image-hover-effect-two position-relative">
                         <Image
-                          src={tourImgNine}
+                          src={tourImgOne}
+                          loader={imageLoader}
+                          style={{ width: "100%", height: "auto" }}
+                          alt="image"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div className="col-xxl-6 col-xl-6 col-lg-6 col-md-6">
+                  <div className="row gy-24">
+                    <div className="col-xxl-12">
+                      <div className="tour-details-gallery-thumb image-hover-effect-two position-relative">
+                        <Image
+                          src={tourImgTwo}
+                          loader={imageLoader}
+                          style={{ width: "100%", height: "auto" }}
+                          alt="image"
+                        />
+                      </div>
+                    </div>
+                    <div className="col-xxl-12">
+                      <div className="tour-details-gallery-thumb image-hover-effect-two position-relative">
+                        <Image
+                          src={tourImgThree}
                           loader={imageLoader}
                           style={{ width: "100%", height: "auto" }}
                           alt="image"
@@ -319,7 +343,7 @@ const TourDetailTabArea = () => {
               <h4 className="mb-20">Tour Location</h4>
               <div className="tour-details-location-map">
                 <iframe
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d89245.36062680863!2d25.596462799999998!3d45.652478099999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40b35b862aa214f1%3A0x6cf5f2ef54391e0f!2sBra%C8%99ov%2C%20Romania!5e0!3m2!1sen!2sbd!4v1707640089632!5m2!1sen!2sbd"
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3537.363049152582!2d83.9855933150616!3d28.20958398260659!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x399595d6e5b6e3e1%3A0x7e1b1b1b1b1b1b1b!2sPokhara%2C%20Nepal!5e0!3m2!1sen!2snp!4v1707640089632!5m2!1sen!2snp"
                   allowFullScreen
                   loading="lazy"
                   referrerPolicy="no-referrer-when-downgrade"
