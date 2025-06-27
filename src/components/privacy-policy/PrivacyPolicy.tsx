@@ -86,7 +86,9 @@ const PrivacyPolicy = () => {
 
                                     <div className="policy-address">
                                         <p className="mb-0">
-                                            <Link href="#">1426 Center StreetBend, or <br/> 97702, California, USA</Link>
+                                            <Link target="_blank" href="#">
+                        Shop No. 1010, Gorakhnath Road, Gorakhpur, Uttar Pradesh, Pin Code - 273015
+                      </Link>
                                         </p>
                                     </div>
                                 </div>
