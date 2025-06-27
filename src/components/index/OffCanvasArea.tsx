@@ -65,7 +65,7 @@ const OffCanvasArea = () => {
                     </div>
                     <div className="offcanvas-contact-text">
                       <Link target="_blank" href="#">
-                        1426 Center StreetBend, 97702, California, USA
+                        Shop No. 1010, Gorakhnath Road, Gorakhpur, Uttar Pradesh, Pin Code - 273015
                       </Link>
                     </div>
                   </li>
@@ -76,7 +76,8 @@ const OffCanvasArea = () => {
                       </Link>
                     </div>
                     <div className="offcanvas-contact-text">
-                      <Link href="tel:+415864872899">+415-864-8728-99</Link>
+                      <Link href="tel:+918429812424">+91 842 981 2424</Link>
+                      <Link href="tel:+918429962424">+91 842 996 2424</Link>
                     </div>
                   </li>
                   <li className="d-flex align-items-center gap-10">

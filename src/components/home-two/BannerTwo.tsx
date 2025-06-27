@@ -59,8 +59,35 @@ const BannerTwo = () => {
                     <div className="banner-slider-wrapper">
                       <div
                         className="banner-two-image"
-                        style={{ backgroundImage: `url(${item.bgImg.src})` }}
-                      ></div>
+                        style={{ minHeight: "400px", backgroundColor: "#eaeaea" }}
+                      >
+                        <Image
+                          src={item?.bgImg}
+                          loader={imageLoader}
+                          fill
+                          priority={index === 0}
+                          sizes="(max-width: 768px) 100vw, 80vw"
+                          style={{
+                            objectFit: "cover",
+                            objectPosition: "center",
+                            
+                          }}
+                          alt={item.tagOne + " " + item.tagTwo + " " + item.tagThree}
+                        />
+                        <div
+                          style={{
+                            position: "absolute",
+                            top: 0,
+                            left: 0,
+                            width: "100%",
+                            height: "100%",
+                            background: "linear-gradient(120deg, rgba(30,42,73,0.4) 0%, rgba(30,42,73,0.1) 100%)",
+                            zIndex: 1,
+                            pointerEvents: "none",
+                            mixBlendMode: "multiply"
+                          }}
+                        />
+                      </div>
                       <div className="container">
                         <div className="row justify-content-center">
                           <div className="col-xxl-9 col-xl-9 col-lg-10">
