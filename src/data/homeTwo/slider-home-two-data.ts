@@ -16,9 +16,9 @@ import bannerImgGosaikundaTrekking from '../../../public/assets/images/banner/ba
 import bannerImgJanakpurChitwan1 from '../../../public/assets/images/banner/banner-2/janakpur to chitwan park1.jpeg';
 import bannerImgJanakpurChitwan2 from '../../../public/assets/images/banner/banner-2/janakpur to chitwan park2.jpeg';
 import bannerImgKailashMansarovar from '../../../public/assets/images/banner/banner-2/kailash mansarovar.jpg';
-import bannerImgManokamnaDevi from '../../../public/assets/images/banner/banner-2/manokamna devi .jpg';
+import bannerImgManokamnaDevi from '../../../public/assets/images/banner/banner-2/manokamna devi.jpg';
 import bannerImgMountainFlight from '../../../public/assets/images/banner/banner-2/mountain flight1.jpg';
-import bannerImgMuktinath from '../../../public/assets/images/banner/banner-2/Muktinath.jpeg';
+import bannerImgMuktinath from '../../../public/assets/images/banner/banner-2/Muktinath.jpg';
 import bannerImgParagliding from '../../../public/assets/images/banner/banner-2/paragliding.jpeg';
 import bannerImgPasupatiNath from '../../../public/assets/images/banner/banner-2/Pasupati nath.jpg';
 import bannerImgRafting from '../../../public/assets/images/banner/banner-2/Rafting.jpg';
@@ -75,8 +75,8 @@ export const sliderData: IHomeTwoSliderData[] = [
     {
       id: 7,
       bgImg: bannerImgSeven,
-      tagOne: "Wildlife Safari in",
-      tagTwo: "Chitwan",
+      tagOne: "Trekking in",
+      tagTwo: "Annapurna range",
       tagThree: "National Park",
       description: "Encounter rhinos, tigers, and exotic birds in Nepal's premier wildlife conservation area."
     },
@@ -107,10 +107,10 @@ export const sliderData: IHomeTwoSliderData[] = [
     {
       id: 11,
       bgImg: bannerImgEleven,
-      tagOne: "Sunrise Views from",
-      tagTwo: "Nagarkot",
+      tagOne: "Boating in",
+      tagTwo: "Phewa Lake",
       tagThree: "Hill Station",
-      description: "Watch the Himalayas come alive with golden sunlight from this popular viewpoint near Kathmandu."
+      description: "Experience the serene beauty of Phewa Lake with a peaceful boat ride surrounded by stunning mountain views."
     },
     {
       id: 12,
@@ -139,8 +139,8 @@ export const sliderData: IHomeTwoSliderData[] = [
     {
       id: 15,
       bgImg: bannerImgJanakpurChitwan1,
-      tagOne: "Janakpur to",
-      tagTwo: "Chitwan Park",
+      tagOne: "",
+      tagTwo: "Chitwan National Park",
       tagThree: "Safari",
       description: "Travel from the birthplace of Sita to the wildlife haven of Chitwan National Park."
     },
@@ -205,7 +205,7 @@ export const sliderData: IHomeTwoSliderData[] = [
       bgImg: bannerImgRafting,
       tagOne: "Rafting",
       tagTwo: "on the",
-      tagThree: "Trishuli River",
-      description: "Experience the thrill of white-water rafting on Nepal's famous Trishuli River."
+      tagThree: "Phewa Lake Pokhara",
+      description: "Experience the thrill of white-water rafting on Pokhara's famous Phewa Lake."
     },
   ];
