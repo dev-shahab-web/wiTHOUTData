@@ -111,7 +111,7 @@ const Wrapper: React.FC<WrapperProps> = ({ children }) => {
                 return <FooterAreaFive />;
             }
           })()}
-          <BacktoTop />
+          {/* <BacktoTop /> */}
         </>
       )}
     </>
