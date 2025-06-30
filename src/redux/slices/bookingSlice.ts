@@ -16,6 +16,7 @@ export const bookingSlice = createSlice({
       const productIndex = state?.bookingProducts?.findIndex(
         (item) => item.id === payload.id
       );
+      console.log("payload", payload);
       if (productIndex >= 0) {
         const toastId = toast.loading("");
         state.bookingProducts[productIndex].quantity! += 1;

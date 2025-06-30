@@ -6,6 +6,8 @@ import "../style/index.scss";
 import AppProvider from "@/contextApi/AppProvider";
 import ReduxProvider from "@/redux/provider";
 import { Toaster } from "sonner";
+import GlobalWhatsAppCTA from "@/components/GlobalWhatsAppCTA";
+
 export const metadata = {
   title: "HolyNepalYatra | Best Nepal Tour Packages - Top Travel Agency in Nepal",
   description: "Discover the best of Nepal with HolyNepalYatra. We offer premium Nepal tour packages, religious tours, adventure trips, and customized travel experiences. Trusted by thousands for unforgettable journeys across Nepal.",
@@ -34,6 +36,7 @@ export default function RootLayout({
           <ReduxProvider>
             <AppProvider>{children}</AppProvider>
             <Toaster position="top-center" richColors />
+            <GlobalWhatsAppCTA />
           </ReduxProvider>
         </body>
       </html>

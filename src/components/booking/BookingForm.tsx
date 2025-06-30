@@ -1,8 +1,16 @@
 import BookingComponentForm from "@/forms/BookingComponentForm";
+import { RootState } from "@/redux/store";
 import Link from "next/link";
 import React from "react";
+import { useSelector } from "react-redux";
 
 const BookingForm = () => {
+  const bookingProducts = useSelector(
+      (state: RootState) => state.booking.bookingProducts
+    );
+
+    console.log("bookingProducts", bookingProducts);
+
   return (
     <>
       <div className="booking-form">
