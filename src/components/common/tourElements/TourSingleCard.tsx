@@ -44,14 +44,14 @@ const TourSingleCard = ({
                   {/* <button className="tour-favorite tour-like">
                     <i className="icon-heart"></i>
                   </button> */}
-                  <div className="tour-location">
+                  {/* <div className="tour-location">
                     <span>
                       <Link href={`/tour-details/${tour?.id}`}>
                         <i className="fa-regular fa-location-dot"></i>{" "}
                         {tour.tourLocation}
                       </Link>
                     </span>
-                  </div>
+                  </div> */}
                 </div>
               </div>
               <div className="tour-content" style={{display: "flex", flexDirection: "column", alignContent: "space-between", justifyContent: "space-between", height: "50%" }}>
@@ -67,7 +67,8 @@ const TourSingleCard = ({
                 </div>
                 <h5 className="tour-title fw-5 underline custom_mb-5">
                   <Link href={`/tour-details/${tour?.id}`}>
-                    {tour.tourTitle}
+                     {/* <i className="fa-regular fa-location-dot"></i>{" "} */}
+                      {tour.tourLocation}
                   </Link>
                 </h5>
                 {/* <span className="tour-price b3">
@@ -118,14 +119,14 @@ const TourSingleCard = ({
                 {/* <button className="tour-favorite tour-like">
                   <i className="icon-heart"></i>
                 </button> */}
-                <div className="tour-location">
+                {/* <div className="tour-location">
                   <span>
                     <Link href={`/tour-details/${tour?.id}`}>
                       <i className="fa-regular fa-location-dot"></i>{" "}
                       {tour.tourLocation}
                     </Link>
                   </span>
-                </div>
+                </div> */}
               </div>
             </div>
             <div className="tour-content" style={{display: "flex", flexDirection: "column", alignContent: "space-between", justifyContent: "space-between", height: "50%" }}>
@@ -142,7 +143,8 @@ const TourSingleCard = ({
                 </div>
               </div>
               <h6 className="tour-title fw-5 underline custom_mb-5">
-                <Link href={`/tour-details/${tour?.id}`}>{tour.tourTitle}</Link>
+                <Link href={`/tour-details/${tour?.id}`}> <i className="fa-regular fa-location-dot"></i>{" "}
+                      {tour.tourLocation}</Link>
               </h6>
               </div>
               {/* <span className="tour-price b3">
