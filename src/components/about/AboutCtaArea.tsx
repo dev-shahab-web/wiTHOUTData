@@ -52,13 +52,13 @@ const AboutCtaArea = () => {
                 </div>
                 <div className="cta-btn text-center p-relative z-index-11">
                   <Link
-                    href="/booking"
+                    href="tel:+918429812424"
                     className="bd-primary-btn btn-style has-arrow is-bg btn-tertiary is-white radius-60"
                   >
                     <span className="bd-primary-btn-arrow arrow-right">
                       <i className="fa-regular fa-arrow-right"></i>
                     </span>
-                    <span className="bd-primary-btn-text">Book Now</span>
+                    <span className="bd-primary-btn-text">Call</span>
                     <span className="bd-primary-btn-circle"></span>
                     <span className="bd-primary-btn-arrow arrow-left">
                       <i className="fa-regular fa-arrow-right"></i>

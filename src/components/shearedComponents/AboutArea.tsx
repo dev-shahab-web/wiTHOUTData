@@ -1,7 +1,7 @@
 "use client";
 import React from "react";
-import aboutImgThree from "../../../public/assets/images/about/about-img-3.png";
-import aboutImgFour from "../../../public/assets/images/about/about-img-4.png";
+import aboutImgThree from "../../../public/assets/images/about/about-img-5.png";
+import aboutImgFour from "../../../public/assets/images/about/about-img-6.png";
 import aboutShape from "../../../public/assets/images/shapes/about-shape.png";
 import { imageLoader } from "@/hooks/image-loader";
 import Image from "next/image";
@@ -42,7 +42,7 @@ const AboutArea = () => {
               />
             </div>
             <div className="about-experience">
-              <h2 className="about-experience-title">26</h2>
+              <h2 className="about-experience-title">25</h2>
               <span className="about-experience-subtitle">
                 Years of <br /> Experience
               </span>
@@ -67,8 +67,9 @@ const AboutArea = () => {
                     Excellent Security
                   </span>
                   <span className="about-list-subtitle">
-                    Share the core values and principles that drive your
-                    company. Emphasize a commitment to customer.
+                    Your safety is our top priority. We partner with trusted local
+                    guides and use secure transport to ensure a worry-free journey
+                    across Nepal s breathtaking destinations.
                   </span>
                 </div>
               </li>
@@ -79,8 +80,10 @@ const AboutArea = () => {
                 <div>
                   <span className="about-list-title mb-5">Cost Efficiency</span>
                   <span className="about-list-subtitle">
-                    Share the core values and principles that drive your
-                    company. Emphasize a commitment to customer.
+                    Enjoy the best value for your adventure. Our packages are
+                    designed to offer affordable rates without compromising on
+                    quality, so you can explore Nepal’s wonders within your
+                    budget.
                   </span>
                 </div>
               </li>
@@ -93,8 +96,9 @@ const AboutArea = () => {
                     World Wide Route
                   </span>
                   <span className="about-list-subtitle">
-                    Share the core values and principles that drive your
-                    company. Emphasize a commitment to customer.
+                    From the Himalayas to the Terai, our network covers all major
+                    tourist routes in Nepal, connecting you to iconic sites like
+                    Kathmandu, Pokhara, Chitwan, Lumbini, and beyond.
                   </span>
                 </span>
               </li>
