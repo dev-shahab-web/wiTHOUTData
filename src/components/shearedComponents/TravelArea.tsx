@@ -135,9 +135,9 @@ const TravelArea = () => {
                             </span>
                           </div>
                           <h5 className="travel-title white-text underline-two">
-                            <Link href="/destinations-details-right ">
                               {item.travelTitle} Tours
-                            </Link>
+                            {/* <Link href="/destinations-details-right ">
+                            </Link> */}
                           </h5>
                         </div>
                       </div>

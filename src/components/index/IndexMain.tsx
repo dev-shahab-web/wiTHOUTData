@@ -16,6 +16,8 @@ import TestimonialAreaTwo from "../home-two/TestimonialAreaTwo";
 import FooterAreaFive from "@/layout/footer/FooterAreaFive";
 import TrendsArea from "../home-two/TrendsArea";
 import TourAreaTwo from "../home-two/TourAreaTwo";
+import ContactFormArea from "../contact/ContactFormArea";
+import ContactMapArea from "../contact/ContactMapArea";
 
 const IndexMain = () => {
   return (
@@ -23,11 +25,14 @@ const IndexMain = () => {
       {/* <OffCanvasArea /> */}
       <BannerTwo />
       <ChooseArea />
-       <TourAreaTwo />
+      <TourAreaTwo />
       {/* <TrendsArea /> */}
       {/* <DestinationArea /> */}
       <CounterAreaFive />
       <TestimonialAreaTwo />
+      <ContactFormArea />
+      <ContactMapArea />
+      <br />
       {/* <FooterAreaFive /> */}
       {/* <DemoBannerArea />
       <TopFeatureArea />

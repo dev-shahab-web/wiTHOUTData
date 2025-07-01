@@ -32,16 +32,23 @@ export const selectAgeData: niceSelectType[] = [
 
 //tour type data
 export const selectTourData: niceSelectType[] = [
-  {
+  // {
+  //   id: 1,
+  //   option: "Wild Tour",
+  // },
+  // {
+  //   id: 2,
+  //   option: "City Tour",
+  // },
+  // {
+  //   id: 3,
+  //   option: "Skydrive",
+  // },
+   {
     id: 1,
-    option: "Wild Tour",
+    option: "Nepal",
   },
   {
     id: 2,
-    option: "City Tour",
-  },
-  {
-    id: 3,
-    option: "Skydrive",
-  },
+    option: "Kailash Yatra",}
 ];

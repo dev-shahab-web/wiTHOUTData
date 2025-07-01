@@ -19,7 +19,7 @@ const AboutTestimonial = () => {
                     </div>
                     <div className="row gy-24 justify-content-between">
                         {
-                            testimonialData && testimonialData.slice(19, 22).map(item => <div key={item.id} className="col-xxl-4 col-xl-4 col-lg-4">
+                            testimonialData && testimonialData.slice(11, 14).map(item => <div key={item.id} className="col-xxl-4 col-xl-4 col-lg-4">
                                 <div className="testimonial-wrapper testimonial-style-three">
                                     <div className="testimonial-content p-relative">
                                         <div className="testimonial-avatar flex-wrap mb-25">

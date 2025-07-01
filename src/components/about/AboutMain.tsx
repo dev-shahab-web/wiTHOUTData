@@ -16,7 +16,7 @@ const AboutMain = () => {
       <AboutCtaArea />
       <TravelArea />
       <AboutTestimonial />
-      <AboutTeamArea />
+      {/* <AboutTeamArea /> */}
       <InstagramArea />
     </>
   );

@@ -1,7 +1,7 @@
 "use client";
 import React, { useState } from "react";
 import ModalVideo from "react-modal-video";
-import bgImg from "../../../public/assets/images/bg/video-bg.png";
+import bgImg from "../../../public/assets/images/bg/nepalAriel.jpg";
 
 const VideoArea = () => {
   const [isOpen, setIsOpen] = useState(false);

@@ -69,7 +69,7 @@ export const counterData: ICounterDataType[] = [
   {
     id: 9,
     icon: "icon-location-crosshairs",
-    counterNumber: 999,
+    counterNumber: 20,
     counterTitle: "+",
     description: "Total Destination",
   },
@@ -83,15 +83,15 @@ export const counterData: ICounterDataType[] = [
   {
     id: 11,
     icon: "icon-circle-user",
-    counterNumber: 399,
+    counterNumber: 100,
     counterTitle: "+",
     description: "Our Volunteer",
   },
   {
     id: 12,
     icon: "icon-balloons",
-    counterNumber: 195,
-    counterTitle: "M",
+    counterNumber: 9999,
+    counterTitle: "+",
     description: "Happy Traveler",
   },
   //home five end
