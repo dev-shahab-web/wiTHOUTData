@@ -35,8 +35,8 @@ const FooterAreaFive = () => {
                   <div className="footer-support-btn">
                     <Link
                       className="bd-icon-btn has-big hover-style " style={isMobile ? {fontSize: "16px", width:"30px", height: "30px"}: {}}
-                      href="contact"
-                      target="_blank"
+                      href="tel:+918429812424"
+                      // target="_blank"
                     >
                       <i className="fa-sharp fa-regular fa-arrow-right"></i>
                     </Link>
@@ -62,7 +62,7 @@ const FooterAreaFive = () => {
                     <Link
                       className="bd-icon-btn has-big hover-style"
                       style={isMobile ? {fontSize: "16px", width:"30px", height: "30px"}: {}}
-                      href="destinations-details-right"
+                      href="tour-listing-three"
                       target="_blank"
                     >
                       <i className="fa-sharp fa-regular fa-arrow-right"></i>
