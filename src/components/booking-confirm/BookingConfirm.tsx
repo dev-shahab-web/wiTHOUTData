@@ -74,7 +74,7 @@ const BookingConfirm = () => {
                             3 𝗑 Adult (age 7-99)
                           </div>
                           <div className="booking-sidebar-price-item-amount">
-                            $1800.00
+                             ₹₹₹₹.00
                           </div>
                         </div>
                         <div className="booking-sidebar-price-item d-flex flex-wrap justify-content-between">
@@ -82,7 +82,7 @@ const BookingConfirm = () => {
                             1 𝗑 Infant (age 0-6)
                           </div>
                           <div className="booking-sidebar-price-item-amount">
-                            $599.00
+                             ₹₹₹₹.00
                           </div>
                         </div>
                         <div className="booking-sidebar-price-total d-flex flex-wrap justify-content-between">
@@ -90,7 +90,7 @@ const BookingConfirm = () => {
                             Total price
                           </div>
                           <div className="booking-sidebar-price-item-amount b3 fw-7">
-                            $2399.00
+                             ₹₹₹₹.00
                           </div>
                         </div>
                       </div>
