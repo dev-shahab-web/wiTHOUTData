@@ -23,7 +23,7 @@ import bannerImgParagliding from '../../../public/assets/images/banner/banner-2/
 import bannerImgPasupatiNath from '../../../public/assets/images/banner/banner-2/Pasupati nath.jpg';
 import bannerImgRafting from '../../../public/assets/images/banner/banner-2/Rafting.jpg';
 import bannerImgJanakpur from '../../../public/assets/images/banner/banner-2/JANAKPUR.jpeg';
-import bannerImgNagarkot from '../../../public/assets/images/banner/banner-2/nagarkot.jpeg';
+import bannerImgNagarkot from '../../../public/assets/images/banner/banner-2/Nagarkot.jpeg';
 import bannerImgHelicopterTour from '../../../public/assets/images/banner/banner-2/Helicopter.jpeg';
 
 export const sliderData: IHomeTwoSliderData[] = [
