@@ -12,7 +12,7 @@ export const contactData: IContactData[] = [
         id: 2,
         title: 'Email Us',
         subTitleOne: 'holynepalyatra@gmail.com',
-        subTitleTwo: '',
+        subTitleTwo: '-',
         icon: 'icon-envelope',
     },
     {
