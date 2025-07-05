@@ -138,7 +138,7 @@ const BookingSidebar = () => {
                           </div>
                         </div>
                       </div>
-                      <div className="modal-body-bottom">
+                      {/* <div className="modal-body-bottom">
                         <h6 className="mb-10">{`Add Infant's Ages`}</h6>
                         <div className="shop-selector">
                           <NiceSelect
@@ -150,7 +150,7 @@ const BookingSidebar = () => {
                             placeholder={item?.infantAge}
                           />
                         </div>
-                      </div>
+                      </div> */}
                     </div>
                   </div>
                 </div>
@@ -232,7 +232,7 @@ const BookingSidebar = () => {
                         </div>
                       </div>
                     </div>
-                    <div className="modal-body-bottom">
+                    {/* <div className="modal-body-bottom">
                       <h6 className="mb-10">{`Add Infant's Ages`}</h6>
                       <div className="shop-selector">
                         <NiceSelect
@@ -244,7 +244,7 @@ const BookingSidebar = () => {
                           placeholder="12 Years"
                         />
                       </div>
-                    </div>
+                    </div> */}
                   </div>
                 </div>
               </div>
@@ -279,11 +279,10 @@ const BookingSidebar = () => {
                     </span>
                   </div>
                 </div>
-                <div className="booking-sidebar-widget-wrapper">
+                {/* <div className="booking-sidebar-widget-wrapper">
                   <div className="booking-sidebar-price-wrapper">
                     <h6 className="booking-sidebar-price-title small mb-15">
-                      {item?.quantity} &times; Island Hopping in the Caribbean:
-                      Sun & Sea
+                      {item?.quantity} &times; Please enter your booking details
                     </h6>
                     <div className="booking-sidebar-price-content">
                       <div className="booking-sidebar-price-item d-flex flex-wrap justify-content-between">
@@ -312,13 +311,13 @@ const BookingSidebar = () => {
                       </div>
                     </div>
                   </div>
-                </div>
+                </div> */}
               </aside>
             ))}
           </>
         ) : (
           <>
-            <aside className="booking-sidebar-wrapper mb-24">
+            {/* <aside className="booking-sidebar-wrapper mb-24">
               <div className="booking-sidebar-widget-wrapper mb-30">
                 <div className="booking-sidebar-widget-thumb mb-15">
                   <Image
@@ -375,7 +374,7 @@ const BookingSidebar = () => {
                   </div>
                 </div>
               </div>
-            </aside>
+            </aside> */}
           </>
         )}
       </div>
