@@ -7,10 +7,12 @@ import { imageLoader } from "@/hooks/image-loader";
 import useGlobalContext from "@/hooks/use-context";
 import MenuTwo from "./components/MenuTwo";
 import useIsMobile from "@/hooks/useIsMobile";
+import useScrollDirection from "@/hooks/sticky-header";
 
 const HeaderTwo = () => {
   const { toggleSideMenu, scrollDirection } = useGlobalContext();
   const isMobile = useIsMobile();
+  useScrollDirection(null);
 
   return (
     <>
