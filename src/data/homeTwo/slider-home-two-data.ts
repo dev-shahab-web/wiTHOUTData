@@ -208,8 +208,8 @@ export const sliderData: IHomeTwoSliderData[] = [
       bgImg: bannerImgRafting,
       tagOne: "Rafting",
       tagTwo: "on the",
-      tagThree: "Tulsi River",
-      description: "Experience the thrill of white-water rafting on Tulsi River, surrounded by stunning landscapes."
+      tagThree: "Trishuli River",
+      description: "Experience the thrill of white-water rafting on Trishuli River, surrounded by stunning landscapes."
     },
     {
       id: 24,
