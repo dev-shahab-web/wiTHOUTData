@@ -40,7 +40,7 @@ const TourDetailTabArea = ({data}: any) => {
             >
               Gallery
             </button>
-            <button
+            {/* <button
               className="nav-link"
               id="nav-feedback-tab"
               data-bs-toggle="tab"
@@ -52,7 +52,7 @@ const TourDetailTabArea = ({data}: any) => {
               tabIndex={-1}
             >
               Feedback
-            </button>
+            </button> */}
           </div>
         </nav>
         <div className="tab-content mt-25" id="nav-tabContent">
