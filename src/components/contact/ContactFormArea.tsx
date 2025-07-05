@@ -62,7 +62,7 @@ const ContactFormArea = () => {
                         </Link>
                       </li> */}
                       <li>
-                        <Link className="youtube" href="https://youtube.com/">
+                        <Link className="youtube" href="https://youtube.com/@holynepalyatra?si=CWtUJbf19v1l17fm">
                           <i className="icon-youtube"></i>
                         </Link>
                       </li>

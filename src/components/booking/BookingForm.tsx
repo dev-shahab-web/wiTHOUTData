@@ -15,7 +15,7 @@ const BookingForm = () => {
     <>
       <div className="booking-form">
         {/*Stepper*/}
-        <div className="steps-form mb-20">
+        {/* <div className="steps-form mb-20">
           <div className="steps-row style_two setup-panel d-flex">
             <div className="steps-step">
               <Link href="#step-one" className="step-active steps-title">
@@ -28,7 +28,7 @@ const BookingForm = () => {
               </Link>
             </div>
           </div>
-        </div>
+        </div> */}
 
         {/* booking form */}
         <BookingComponentForm />

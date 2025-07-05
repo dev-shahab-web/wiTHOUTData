@@ -21,14 +21,14 @@ const TourDetails = ({ id }: idType) => {
               <div className="col-xxl-12 col-xl-12 col-lg-12">
                 <div className="tour-details-wrapper">
                   <div className="tour-details mb-25">
-                    <div className="tour-details-thumb details-slide-full mb-30">
+                    {/* <div className="tour-details-thumb details-slide-full mb-30">
                       <Image
                         src={data?.img}
                         loader={imageLoader}
                         style={{ width: "100%", height: "auto" }}
                         alt="image"
                       />
-                    </div>
+                    </div> */}
                     <div className="tour-details-content">
                       <div className="tour-details-badge d-flex gap--5 mb-10">
                         <span className="bd-badge warning fw-5">Featured</span>
@@ -39,11 +39,11 @@ const TourDetails = ({ id }: idType) => {
                       </h3>
                       <div className="tour-details-meta d-flex flex-wrap gap-10 align-items-center justify-content-between mb-20">
                         <div className="tour-details-price">
-                          <h4 className="price-title">
-                            ₹₹₹₹
+                          <h5 className="price-title">
+                            ₹₹₹₹ - / 
                             {/* ${data?.tourPrice} */}
-                            <span>/Call now for price details</span>
-                          </h4>
+                            <Link href="tel:+918429812424"> Call now for prices</Link>
+                          </h5>
                         </div>
                         <div className="tour-details-meta-right d-flex flex-wrap gap-10 align-items-center justify-content-between">
                           <div className="rating-badge border-badge">
@@ -53,16 +53,16 @@ const TourDetails = ({ id }: idType) => {
                             </span>
                           </div>
                           <div className="theme-social">
-                            <Link href="https://www.facebook.com/">
-                              <i className="icon-facebook"></i>
+                            <Link href="https://www.facebook.com/profile.php?id=61572491938150/">
+                      <i className="fab fa-facebook-f"></i>
+                    </Link>
+                            <Link href="https://www.instagram.com/holynepalyatra/">
+                              <i className="icon-instagram"></i>
                             </Link>
-                            <Link href="https://www.twitter.com/">
-                              <i className="icon-twitter-x"></i>
-                            </Link>
-                            <Link href="https://www.linkedin.com/">
+                            {/* <Link href="https://www.linkedin.com/">
                               <i className="icon-linkedin"></i>
-                            </Link>
-                            <Link href="https://www.youtube.com/">
+                            </Link> */}
+                            <Link href="https://youtube.com/@holynepalyatra?si=CWtUJbf19v1l17fm">
                               <i className="icon-youtube"></i>
                             </Link>
                           </div>

@@ -144,7 +144,7 @@ const BookingFormModal = () => {
                     </div>
                   </div>
                 </div>
-                <div className="modal-body-bottom">
+                {/* <div className="modal-body-bottom">
                   <h6 className="mb-10">Add {`Infant's`} Ages</h6>
                   <div className="shop-selector">
                     <NiceSelect
@@ -156,7 +156,7 @@ const BookingFormModal = () => {
                       placeholder="Select Age"
                     />
                   </div>
-                </div>
+                </div> */}
               </div>
               <div className="modal-footer">
                 {dateRange[0] == null ||

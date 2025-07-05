@@ -38,7 +38,7 @@ const BookingComponentForm = () => {
           <div className="col-md-12">
             <div className="booking-form-wrapper mb-35">
               <h4 className="booking-form-title mb-15">
-                Island Hopping in the Caribbean: Sun & Sea
+                Please fill out the form below to book your tour.
               </h4>
               <div className="booking-form-input-wrapper">
                 <div className="booking-form-input-box">
@@ -316,7 +316,7 @@ const BookingComponentForm = () => {
               className="nextBtn-2 bd-primary-btn btn-style is-bg radius-60"
               type="submit"
             >
-              <span className="bd-primary-btn-text">Payment details</span>
+              <span className="bd-primary-btn-text">Book Now</span>
               <span className="bd-primary-btn-circle"></span>
             </button>
           </div>
