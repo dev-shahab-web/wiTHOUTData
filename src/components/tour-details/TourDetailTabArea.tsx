@@ -8,8 +8,11 @@ import tourImgTwo from "../../../public/assets/images/tour/Top Trending Packages
 import tourImgThree from "../../../public/assets/images/tour/Top Trending Packages 03.png";
 import { clientReviewData } from "@/data/client-review-data";
 import TourDetailsPostForm from "./TourDetailsPostFrom/TourDetailsPostForm";
+import { tourDetailsContent } from "@/data/tour-data";
 
-const TourDetailTabArea = ({data}: any) => {
+const TourDetailTabArea = ({ data }: any) => {
+  // Find the tour details content by id (fallback to first if not found)
+  const details = tourDetailsContent.find((t) => t.id === data?.id) || tourDetailsContent[0];
   return (
     <>
       <div className="tour-details-nav-tabs mb-35">
@@ -40,19 +43,6 @@ const TourDetailTabArea = ({data}: any) => {
             >
               Gallery
             </button>
-            {/* <button
-              className="nav-link"
-              id="nav-feedback-tab"
-              data-bs-toggle="tab"
-              data-bs-target="#nav-feedback"
-              type="button"
-              role="tab"
-              aria-controls="nav-feedback"
-              aria-selected="false"
-              tabIndex={-1}
-            >
-              Feedback
-            </button> */}
           </div>
         </nav>
         <div className="tab-content mt-25" id="nav-tabContent">
@@ -63,208 +53,84 @@ const TourDetailTabArea = ({data}: any) => {
             aria-labelledby="nav-overview-tab"
             tabIndex={0}
           >
-            <p className="mb-15">{`Embark on the journey of a lifetime with our "Ultimate Adventure: Exploring Nature's Wonders" tour. This extraordinary expedition is designed for those who crave the thrill of discovery and the serenity of untouched landscapes. Get ready to immerse yourself in the breathtaking beauty and diverse ecosystems of some of the most awe-inspiring natural wonders on Earth.`}</p>
-            <p className="mb-20">{`Join us on the "Ultimate Adventure: Exploring Nature'sWonders" tour and create unforgettable memories as you connect withthe natural world in ways you've never imagined. This tour isperfect for nature enthusiasts, adventure seekers, and anyonelooking to escape the ordinary and embrace the extraordinary. Bookyour spot today and prepare for an adventure of a lifetime!`}</p>
+            {/* Overview Section */}
+            {details.overview.map((text, idx) => (
+              <p className={idx === 0 ? "mb-15" : "mb-20"} key={idx}>{text}</p>
+            ))}
+            {/* Include/Exclude Section */}
             <div className="tour-details-list-wrap mb-35">
               <h4 className="mb-20">Include/ Exclude</h4>
               <div className="tour-details-list-box">
                 <div className="tour-details-list-include">
                   <ul>
-                    <li>
-                      <span className="list-icon success">
-                        <i className="fa-solid fa-check"></i>
-                      </span>
-                      Accommodations
-                    </li>
-                    <li>
-                      <span className="list-icon success">
-                        <i className="fa-solid fa-check"></i>
-                      </span>
-                      Meals
-                    </li>
-                    <li>
-                      <span className="list-icon success">
-                        <i className="fa-solid fa-check"></i>
-                      </span>
-                      Transportation
-                    </li>
-                    <li>
-                      <span className="list-icon success">
-                        <i className="fa-solid fa-check"></i>
-                      </span>
-                      Activities
-                    </li>
-                    <li>
-                      <span className="list-icon success">
-                        <i className="fa-solid fa-check"></i>
-                      </span>
-                      Guides
-                    </li>
+                    {details.include.map((item, idx) => (
+                      <li key={idx}>
+                        <span className="list-icon success">
+                          <i className="fa-solid fa-check"></i>
+                        </span>
+                        {item}
+                      </li>
+                    ))}
                   </ul>
                 </div>
                 <div className="tour-details-list-exclude">
                   <ul>
-                    <li>
-                      <span className="list-icon danger">
-                        <i className="fa-regular fa-xmark"></i>
-                      </span>
-                      Airfare
-                    </li>
-                    <li>
-                      <span className="list-icon danger">
-                        <i className="fa-regular fa-xmark"></i>
-                      </span>
-                      Additional Meals
-                    </li>
-                    <li>
-                      <span className="list-icon danger">
-                        <i className="fa-regular fa-xmark"></i>
-                      </span>
-                      Optional Activities
-                    </li>
-                    <li>
-                      <span className="list-icon danger">
-                        <i className="fa-regular fa-xmark"></i>
-                      </span>
-                      Travel Insurance
-                    </li>
-                    <li>
-                      <span className="list-icon danger">
-                        <i className="fa-regular fa-xmark"></i>
-                      </span>
-                      Personal Expenses
-                    </li>
+                    {details.exclude.map((item, idx) => (
+                      <li key={idx}>
+                        <span className="list-icon danger">
+                          <i className="fa-regular fa-xmark"></i>
+                        </span>
+                        {item}
+                      </li>
+                    ))}
                   </ul>
                 </div>
               </div>
             </div>
+            {/* Tour Plan Section */}
             <div className="tour-details-faq mb-35">
               <h4 className="mb-20">Tour Plan</h4>
               <div className="accordion-wrapper faq-style-3">
                 <div className="accordion" id="accordionExampleThree">
-                  <div className="accordion-item">
-                    <h6 className="accordion-header" id="headingNine">
-                      <button
-                        className="accordion-button"
-                        type="button"
-                        data-bs-toggle="collapse"
-                        data-bs-target="#collapseNine"
-                        aria-expanded="true"
-                        aria-controls="collapseNine"
-                      >
-                        <span>Day 01:</span> Arrival and Exploration
-                      </button>
-                    </h6>
-                    <div
-                      id="collapseNine"
-                      className="accordion-collapse collapse show"
-                      aria-labelledby="headingNine"
-                      data-bs-parent="#accordionExampleThree"
-                    >
-                      <div className="accordion-body">
-                        Arrive at your destination and check into your
-                        accommodation. Lorem ipsum dolor sit amet consectetur
-                        adipiscing elit Ut et massa mi. Aliquam hendrerit urna.
-                        Pellentesque sit amet sapien fringilla, mattis ligula
-                        consectetur, ultrices Maecenas. We are a team of the
-                        dedicated patent professionals.
-                        <div className="accordion-body-list">
-                          <ul>
-                            <li>Morning: Arrival and Check-in</li>
-                            <li>Afternoon: City Tour or Landmarks Visit</li>
-                            <li>Evening: Local Cuisine Experience</li>
-                          </ul>
+                  {details.plan.map((item, idx) => {
+                    const headingId = `heading${idx}`;
+                    const collapseId = `collapse${idx}`;
+                    return (
+                      <div className="accordion-item" key={idx}>
+                        <h6 className="accordion-header" id={headingId}>
+                          <button
+                            className={`accordion-button${idx === 0 ? "" : " collapsed"}`}
+                            type="button"
+                            data-bs-toggle="collapse"
+                            data-bs-target={`#${collapseId}`}
+                            aria-expanded={idx === 0 ? "true" : "false"}
+                            aria-controls={collapseId}
+                          >
+                            <span>{item.day}:</span> {item.title}
+                          </button>
+                        </h6>
+                        <div
+                          id={collapseId}
+                          className={`accordion-collapse collapse${idx === 0 ? " show" : ""}`}
+                          aria-labelledby={headingId}
+                          data-bs-parent="#accordionExampleThree"
+                        >
+                          <div className="accordion-body">
+                            {item.description}
+                            {item.highlights && item.highlights.length > 0 && (
+                              <div className="accordion-body-list">
+                                <ul>
+                                  {item.highlights.map((hl, hidx) => (
+                                    <li key={hidx}>{hl}</li>
+                                  ))}
+                                </ul>
+                              </div>
+                            )}
+                          </div>
                         </div>
                       </div>
-                    </div>
-                  </div>
-                  <div className="accordion-item">
-                    <h6 className="accordion-header" id="headingTen">
-                      <button
-                        className="accordion-button collapsed"
-                        type="button"
-                        data-bs-toggle="collapse"
-                        data-bs-target="#collapseTen"
-                        aria-expanded="false"
-                        aria-controls="collapseTen"
-                      >
-                        <span>Day 02:</span> Adventure and Activities
-                      </button>
-                    </h6>
-                    <div
-                      id="collapseTen"
-                      className="accordion-collapse collapse"
-                      aria-labelledby="headingTen"
-                      data-bs-parent="#accordionExampleThree"
-                    >
-                      <div className="accordion-body">
-                        Arrive at your destination and check into your
-                        accommodation. Lorem ipsum dolor sit amet consectetur
-                        adipiscing elit Ut et massa mi. Aliquam hendrerit urna.
-                        Pellentesque sit amet sapien fringilla, mattis ligula
-                        consectetur, ultrices Maecenas. We are a team of the
-                        dedicated patent professionals.
-                      </div>
-                    </div>
-                  </div>
-                  <div className="accordion-item">
-                    <h6 className="accordion-header" id="headingEleven">
-                      <button
-                        className="accordion-button collapsed"
-                        type="button"
-                        data-bs-toggle="collapse"
-                        data-bs-target="#collapseEleven"
-                        aria-expanded="false"
-                        aria-controls="collapseEleven"
-                      >
-                        <span>Day 03:</span> Day Trip or Excursion
-                      </button>
-                    </h6>
-                    <div
-                      id="collapseEleven"
-                      className="accordion-collapse collapse"
-                      aria-labelledby="headingEleven"
-                      data-bs-parent="#accordionExampleThree"
-                    >
-                      <div className="accordion-body">
-                        Arrive at your destination and check into your
-                        accommodation. Lorem ipsum dolor sit amet consectetur
-                        adipiscing elit Ut et massa mi. Aliquam hendrerit urna.
-                        Pellentesque sit amet sapien fringilla, mattis ligula
-                        consectetur, ultrices Maecenas. We are a team of the
-                        dedicated patent professionals.
-                      </div>
-                    </div>
-                  </div>
-                  <div className="accordion-item">
-                    <h6 className="accordion-header" id="headingTwelve">
-                      <button
-                        className="accordion-button collapsed"
-                        type="button"
-                        data-bs-toggle="collapse"
-                        data-bs-target="#collapseTwelve"
-                        aria-expanded="false"
-                        aria-controls="collapseTwelve"
-                      >
-                        <span>Day 04:</span> Culmination and Departure
-                      </button>
-                    </h6>
-                    <div
-                      id="collapseTwelve"
-                      className="accordion-collapse collapse"
-                      aria-labelledby="headingTwelve"
-                      data-bs-parent="#accordionExampleThree"
-                    >
-                      <div className="accordion-body">
-                        Arrive at your destination and check into your
-                        accommodation. Lorem ipsum dolor sit amet consectetur
-                        adipiscing elit Ut et massa mi. Aliquam hendrerit urna.
-                        Pellentesque sit amet sapien fringilla, mattis ligula
-                        consectetur, ultrices Maecenas. We are a team of the
-                        dedicated patent professionals.
-                      </div>
-                    </div>
-                  </div>
+                    );
+                  })}
                 </div>
               </div>
             </div>
