@@ -1,3 +1,609 @@
+// --- DYNAMIC TOUR DETAILS DATA ---
+export interface ITourDetailsContent {
+  id: number;
+  overview: string[];
+  include: string[];
+  exclude: string[];
+  plan: Array<{
+    day: string;
+    title: string;
+    description: string;
+    highlights?: string[];
+  }>;
+}
+
+export const tourDetailsContent: ITourDetailsContent[] = [
+  {
+    id: 1, // Sacred Journey to Muktinath (Kathmandu - Pokhara - Muktinath)
+    overview: [
+      `KTM: Nepal 05 Nights 06 days. Transport: AC Coach. Pickup Point: Ex:Kathmandu. Places Covered: Kathmandu, Pokhara & Muktinath. Duration: 05 Nights / 06 Days. Note: All the above flights and hotels are subject to availability / Cost is subject to change.`
+    ],
+    include: [
+      "05 Nights’ accommodation at Respective Hotel on a bed breakfast basic",
+      "Arrival and departure transfer and sightseeing tours Private A/C HIACE/COSTER",
+      "Air tickets for Pokhara-Jomsom-Pokhara",
+      "Jomsom – Muktinath – Jomsom by jeep sharing basis",
+      "ACAP permit fee",
+      "Pokhara-Kathmandu Airfare",
+      "All current government taxes as applicable"
+    ],
+    exclude: [
+      "Any meal not mentioned on the above program during the tour.",
+      "Any entry fees, ticket during sight seeing",
+      "Insurance Fee",
+      "Monuments entrance fees as mentioned in the program & any payable fee on the spot",
+      "Expenses of personal nature such as bar bills, communication charges, laundry, tips, etc.",
+      "Cost arising out of flight cancellation/road blockades/landslides/riots and events beyond our control",
+      "Any other expenses not mentioned in the above cost"
+    ],
+    plan: [
+      {
+        day: "Day 01",
+        title: "Arrival – Kathmandu",
+        description: "Upon arrival at Kathmandu Airport, you will be greeted and assisted by our Representative. After completing your custom formalities, transfer to Hotel for check-in. Evening visit Bouddhanath Stupa and Pashupatinath Temple. Overnight in Kathmandu Hotel."
+      },
+      {
+        day: "Day 02",
+        title: "Kathmandu – Pokhara",
+        description: "Early morning drop to Airport for Mountain Flight (Optional: INR 9200 PER PERSON EXTRA: Cost not included in Package). After breakfast, drive to Pokhara (about 210 km, 6/7 hrs drive). En-route, visit Manakamana Devi Temple by Cable Car. After puja/darshan, continue driving to Pokhara. Overnight in Pokhara Hotel."
+      },
+      {
+        day: "Day 03",
+        title: "Pokhara – Jomsom (Fly)",
+        description: "After breakfast, fly to Jomsom (about 20 mins). Arrive at Jomsom Airport. Transfer to Hotel. Drive to Muktinath by Jeep (about 20 km, 1 hr drive). Take off from Jeep and walk up (30/40 mins) to Muktinath Temple. Arrive in Temple. Muktinath is the God of Salvation. It holds great significance for all spiritual people in the south Asian subcontinent. Have darshan and worship, walk back to Jeep station and drive back to Jomsom. Overnight in Jomsom Hotel."
+      },
+      {
+        day: "Day 04",
+        title: "Jomsom – Pokhara",
+        description: "Fly back to Pokhara. Arrive in Pokhara. Transfer to Hotel. Visit, Devis fall, Gupteshwor Cave, and Boating on Fewa Lake visit Taal Barahi Temple. The rest of the day is free. Overnight in Pokhara Hotel."
+      },
+      {
+        day: "Day 05",
+        title: "Pokhara (fly) Kathmandu",
+        description: "Upon arrival from Pokhara. Kathmandu Sightseeing: Jalnarayan temple, Boudhanath Stupa, Swoyambhunath & Pashupatinath. Overnight in Kathmandu Hotel."
+      },
+      {
+        day: "Day 06",
+        title: "Departure",
+        description: "After breakfast, Free until departure. Later on time, transfer to Airport for onward destination."
+      }
+    ]
+  },
+  {
+    id: 2, // Nepal Highlights: Pokhara & Kathmandu
+    overview: [
+      `Nepal 04 Nights 05 days. Transport: AC Coach. Pickup Point: Gorakhpur. Places Covered: Pokhara & Kathmandu. Duration: 04 Nights / 05 Days. Note: All hotels are subject to availability / Cost is subject to change.`
+    ],
+    include: [
+      "04 Nights' accommodation at Respective Hotel on a bed breakfast basic",
+      "Arrival and departure transfer and sightseeing tours by Private AC vehicle",
+      "All sightseeing tours as per itinerary",
+      "English speaking guide during sightseeing tours",
+      "All applicable taxes and service charges"
+    ],
+    exclude: [
+      "Any meal not mentioned on the above program during the tour",
+      "Any entry fees during sightseeing",
+      "Insurance Fee",
+      "Monuments entrance fees as mentioned in the program & any payable fee on the spot",
+      "Personal expenses and tips",
+      "Costs related to unforeseen circumstances like roadblocks, bad weather, etc.",
+      "Any other expenses not mentioned in the inclusions"
+    ],
+    plan: [
+      {
+        day: "Day 01",
+        title: "Arrival – Drive to Pokhara",
+        description: "Arrival at Gorakhpur station then drive to Pokhara. Upon arrival at the hotel, welcome drinks and check-in. Evening for leisure. Overnight stay at Pokhara."
+      },
+      {
+        day: "Day 02",
+        title: "Pokhara local Sightseeing",
+        description: "Morning breakfast, proceed for sightseeing at following places: Bindhyabashini temple, Barahi temple, Seti river, Devi's fall, Gupteshwor cave. After finishing sightseeing in Pokhara. One can self-explore the markets of Pokhara or enjoy the walk in the evening at the lakeside. Overnight stay at Pokhara.",
+        highlights: [
+          "Visit to Bindhyabashini temple",
+          "Explore Barahi temple",
+          "See the remarkable Seti river gorge",
+          "Experience Devi's fall",
+          "Discover Gupteshwor cave"
+        ]
+      },
+      {
+        day: "Day 03",
+        title: "Drive to Kathmandu via Manakamana temple",
+        description: "Breakfast then check-out from hotel and drive to Kathmandu via Manakamana temple. After puja and darshan then continue your journey to Kathmandu. Upon arrival at the hotel, welcome drinks and check-in. Evening for leisure. Overnight stay at Kathmandu."
+      },
+      {
+        day: "Day 04",
+        title: "Kathmandu local sightseeing",
+        description: "After breakfast, proceed for sightseeing at following places: Pashupatinath Temple (Which belongs to Lord Shiva), Bouddhanath Stupa (Buddhist Monastery), Budhanilkantha (Jal Narayan), Swayambhunath Stupa (monkey temple). After sightseeing, drive back to the hotel. Overnight stay at Kathmandu.",
+        highlights: [
+          "Visit sacred Pashupatinath Temple",
+          "Explore the magnificent Bouddhanath Stupa",
+          "See the reclining Vishnu at Budhanilkantha",
+          "Visit the ancient Swayambhunath Stupa"
+        ]
+      },
+      {
+        day: "Day 05",
+        title: "Departure",
+        description: "After breakfast, checkout from the hotel and drive Gorakhpur for your onward destination."
+      }
+    ]
+  },
+  {
+    id: 3, // Spiritual Nepal: Lumbini to Kathmandu
+    overview: [
+      `Nepal 05 Nights 06 days. Transport: AC Coach. Pickup Point: Gorakhpur. Places Covered: Pokhara, Kathmandu & Lumbini. Duration: 05 Nights / 06 Days. Note: All hotels are subject to availability / Cost is subject to change.`
+    ],
+    include: [
+      "05 Nights' accommodation at Respective Hotel on a bed breakfast basic",
+      "All transfers and sightseeing by AC vehicle",
+      "English speaking guide during sightseeing",
+      "All applicable taxes and service charges"
+    ],
+    exclude: [
+      "Any meal not mentioned in the program",
+      "Entry fees to monuments and temples",
+      "Insurance Fee",
+      "Personal expenses and tips",
+      "Optional activities",
+      "Any service not mentioned in the inclusions"
+    ],
+    plan: [
+      {
+        day: "Day 01",
+        title: "Arrival – Drive to Pokhara",
+        description: "Arrival at Gorakhpur station then drive to Pokhara. Upon arrival at the hotel, welcome drinks and check-in. Evening for leisure. Overnight stay at Pokhara."
+      },
+      {
+        day: "Day 02",
+        title: "Pokhara Sightseeing",
+        description: "Breakfast, proceed for sightseeing covering Devis falls, Gupteshwor Mahadev Cave, Barahi temple, Bindvasini temple and Seti George. Later, drive to the hotel. Rest of the day will be free on your own. Overnight stay at Pokhara.",
+        highlights: [
+          "Visit spectacular Devi's Falls",
+          "Explore mysterious Gupteshwor Cave",
+          "Visit sacred Barahi Temple",
+          "See the remarkable Seti Gorge"
+        ]
+      },
+      {
+        day: "Day 03",
+        title: "Drive to Kathmandu via Manakamana Temple",
+        description: "After breakfast, check out from the hotel and drive to Kathmandu via Manakamana temple (If time permits). Upon arrival at the hotel, welcome drinks and check-in. Rest of the day will be on your own. Overnight stay at Kathmandu."
+      },
+      {
+        day: "Day 04",
+        title: "Kathmandu Sightseeing",
+        description: "After breakfast, embark for sightseeing by covering Pashupatinath temple, Kathmandu Durbar Square, Taleju Bhawani Temple, Budanilkantha Temple and Swayabhunath stupa (where you have to climb 360 stone steps). Back to the hotel. Evening for leisure. Overnight stay at Kathmandu."
+      },
+      {
+        day: "Day 05",
+        title: "Drive to Lumbini",
+        description: "Breakfast, check-out from the hotel and Drive to Lumbini. Upon arrival at the hotel, welcome drinks and check-in. Rest will be on your own. Overnight stay at Lumbini."
+      },
+      {
+        day: "Day 06",
+        title: "Lumbini sightseeing - Departure",
+        description: "After breakfast, check out from the hotel drive to Lumbini sightseeing. After sightseeing continue drive to Gorakhpur to board for onward destination."
+      }
+    ]
+  },
+  {
+    id: 4, // Nature & Culture: Chitwan Safari Experience
+    overview: [
+      `Nepal 07 Nights 08 days. Transport: AC Coach. Pickup Point: Gorakhpur. Places Covered: Pokhara, Kathmandu & Chitwan National Park. Duration: 07 Nights / 08 Days. Note: All hotels are subject to availability / Cost is subject to change.`
+    ],
+    include: [
+      "07 Nights' accommodation at Respective Hotel on a bed breakfast basic",
+      "All transfers and sightseeing by AC vehicle",
+      "English speaking guide during sightseeing",
+      "All jungle activities in Chitwan",
+      "Full board meals in Chitwan (Breakfast, Lunch & Dinner)",
+      "All applicable taxes and service charges"
+    ],
+    exclude: [
+      "Any meal not mentioned in the program",
+      "Entry fees to monuments and temples",
+      "Insurance Fee",
+      "Personal expenses and tips",
+      "Optional activities not mentioned in the program",
+      "Any service not mentioned in the inclusions"
+    ],
+    plan: [
+      {
+        day: "Day 01",
+        title: "Arrival – Drive to Pokhara",
+        description: "Arrival at Gorakhpur Station then drive to Pokhara. Upon arrival at the hotel, welcome drinks and check-in. Overnight stay at Pokhara."
+      },
+      {
+        day: "Day 02",
+        title: "Drive to Muktinath",
+        description: "Morning breakfast, check-out from the hotel and drive to Jomsom. Upon arrival at the hotel, welcome drinks and check-in. Rest of the day will be on your own. Overnight stay at Jomsom."
+      },
+      {
+        day: "Day 03",
+        title: "Muktinath Temple – Drive to Pokhara",
+        description: "Early morning visit to Muktinath temple. Later back to the hotel. Breakfast, check out from the hotel and drive to Pokhara. Upon arrival at the hotel, welcome drinks and check-in. Rest of the day will be on your own. Overnight stay at Pokhara."
+      },
+      {
+        day: "Day 04",
+        title: "Pokhara Sightseeing",
+        description: "Breakfast, proceed for sightseeing covering Devis falls, Gupteshwor Mahadev Cave, Barahi temple, Bindvasini temple and Seti George. Later, drive to the hotel. Rest of the day will be free on your own. Overnight stay at Pokhara."
+      },
+      {
+        day: "Day 05",
+        title: "Drive to Kathmandu",
+        description: "After breakfast, check out from the hotel and drive to Kathmandu via Manakamana temple (If time permits). Upon arrival at the hotel, welcome drinks and check-in. Rest of the day will be on your own. Overnight stay at Kathmandu."
+      },
+      {
+        day: "Day 06",
+        title: "Kathmandu Sightseeing",
+        description: "After breakfast, embark for sightseeing by covering Pashupatinath temple, Kathmandu Durbar Square, Taleju Bhawani Temple, Budanilkantha Temple and Swayabhunath stupa. Back to the hotel. Evening for leisure. Overnight stay at Kathmandu."
+      },
+      {
+        day: "Day 07",
+        title: "Drive to Chitwan",
+        description: "Breakfast, check-out from the hotel and drive to Chitwan National Park. Upon arrival at the hotel, welcome drinks and check-in. Rest of the day will be free for relaxation. Overnight stay at Chitwan."
+      },
+      {
+        day: "Day 08",
+        title: "Jeep Safari - Departure",
+        description: "Early morning jeep safari in Chitwan National Park to spot wildlife including the endangered one-horned rhinoceros and Royal Bengal tiger. After breakfast, check out from the hotel and drive to Gorakhpur for your onward destination."
+      }
+    ]
+  },
+  {
+    id: 5, // Heritage Trail: Lumbini & Kathmandu
+    overview: [
+      `Nepal 04 Nights 05 days. Transport: AC Coach. Pickup Point: Gorakhpur. Places Covered: Lumbini, Pokhara & Kathmandu. Duration: 04 Nights / 05 Days. Note: All hotels are subject to availability / Cost is subject to change.`
+    ],
+    include: [
+      "04 Nights' accommodation at Respective Hotel on a bed breakfast basic",
+      "All transfers and sightseeing by AC vehicle",
+      "English speaking guide during sightseeing",
+      "All applicable taxes and service charges"
+    ],
+    exclude: [
+      "Any meal not mentioned in the program",
+      "Entry fees to monuments and temples",
+      "Insurance Fee",
+      "Personal expenses and tips",
+      "Optional activities",
+      "Any service not mentioned in the inclusions"
+    ],
+    plan: [
+      {
+        day: "Day 01",
+        title: "Arrival – Drive to Lumbini",
+        description: "Arrival at Gorakhpur, then drive to Lumbini - the birthplace of Lord Buddha. Upon arrival at the hotel, welcome drinks and check-in. Evening visit to Maya Devi Temple and the Sacred Garden. Overnight stay at Lumbini."
+      },
+      {
+        day: "Day 02",
+        title: "Lumbini Sightseeing - Drive to Pokhara",
+        description: "After breakfast, visit different monasteries built by various Buddhist countries. After sightseeing, drive to Pokhara. Upon arrival at the hotel, welcome drinks and check-in. Evening free for leisure. Overnight stay at Pokhara.",
+        highlights: [
+          "Visit Buddhist monasteries from different countries",
+          "Experience the peace and tranquility of Lumbini",
+          "Scenic drive to Pokhara"
+        ]
+      },
+      {
+        day: "Day 03",
+        title: "Pokhara Sightseeing",
+        description: "Breakfast, proceed for sightseeing covering Devis falls, Gupteshwor Mahadev Cave, Barahi temple, Bindvasini temple and Seti George. Later, drive to the hotel. Evening free to explore the lakeside area. Overnight stay at Pokhara."
+      },
+      {
+        day: "Day 04",
+        title: "Drive to Kathmandu",
+        description: "After breakfast, check out from the hotel and drive to Kathmandu. Upon arrival at the hotel, welcome drinks and check-in. Afternoon visit to Kathmandu Durbar Square. Overnight stay at Kathmandu."
+      },
+      {
+        day: "Day 05",
+        title: "Kathmandu Sightseeing - Departure",
+        description: "After breakfast, visit Pashupatinath Temple, Bouddhanath Stupa and Swayambhunath. After sightseeing, drive to Gorakhpur for your onward journey."
+      }
+    ]
+  },
+  {
+    id: 6, // Pilgrimage to Muktinath Temple
+    overview: [
+      `Nepal 04 Nights 05 days. Transport: AC Coach. Pickup Point: Kathmandu. Places Covered: Kathmandu, Pokhara & Muktinath. Duration: 04 Nights / 05 Days. Note: All flights and hotels are subject to availability / Cost is subject to change.`
+    ],
+    include: [
+      "04 Nights' accommodation at Respective Hotel on a bed breakfast basic",
+      "Arrival and departure transfer and sightseeing tours Private A/C Vehicle",
+      "Air tickets for Pokhara-Jomsom-Pokhara",
+      "Jomsom – Muktinath – Jomsom by jeep sharing basis",
+      "ACAP permit fee",
+      "All current government taxes as applicable"
+    ],
+    exclude: [
+      "Any meal not mentioned on the above program during the tour",
+      "Any entry fees during sightseeing",
+      "Insurance Fee",
+      "Monuments entrance fees as mentioned in the program & any payable fee on the spot",
+      "Personal expenses and tips",
+      "Cost arising out of flight cancellation/road blockades/landslides",
+      "Any other expenses not mentioned in the inclusions"
+    ],
+    plan: [
+      {
+        day: "Day 01",
+        title: "Arrival – Kathmandu",
+        description: "Upon arrival at Kathmandu Airport, you will be greeted and assisted by our Representative. After completing your custom formalities, transfer to Hotel for check-in. Evening visit Bouddhanath Stupa. Overnight in Kathmandu Hotel."
+      },
+      {
+        day: "Day 02",
+        title: "Kathmandu – Pokhara",
+        description: "After breakfast, drive to Pokhara (about 210 km, 6/7 hrs drive). En-route, visit Manakamana Devi Temple by Cable Car. After puja/darshan, continue driving to Pokhara. Overnight in Pokhara Hotel."
+      },
+      {
+        day: "Day 03",
+        title: "Pokhara – Jomsom – Muktinath – Jomsom",
+        description: "Early morning, fly to Jomsom (about 20 mins). Arrive at Jomsom. Drive to Muktinath by Jeep (about 20 km, 1 hr drive). Take off from Jeep and walk up (30/40 mins) to Muktinath Temple. Muktinath is the God of Salvation. It holds great significance for all spiritual people in the south Asian subcontinent. Have darshan and worship, walk back to Jeep station and drive back to Jomsom. Overnight in Jomsom Hotel.",
+        highlights: [
+          "Scenic flight over the Himalayas to Jomsom",
+          "Jeep drive through breathtaking mountain landscapes",
+          "Visit to the sacred Muktinath Temple",
+          "Experience the 108 water spouts"
+        ]
+      },
+      {
+        day: "Day 04",
+        title: "Jomsom – Pokhara – Kathmandu",
+        description: "Morning flight back to Pokhara. Upon arrival, sightseeing of Pokhara including Devi's Fall, Gupteshwor Cave, and Phewa Lake. Afternoon drive back to Kathmandu. Overnight stay at Kathmandu."
+      },
+      {
+        day: "Day 05",
+        title: "Departure",
+        description: "After breakfast, visit Pashupatinath Temple if time permits. Later, transfer to Airport for onward destination."
+      }
+    ]
+  },
+  {
+    id: 7, // Adventure Nepal: Jungle Safari & Temples
+    overview: [
+      `Nepal 07 Nights 08 days. Transport: AC Coach. Pickup Point: Gorakhpur. Places Covered: Pokhara, Kathmandu & Chitwan National Park. Duration: 07 Nights / 08 Days. Note: All hotels are subject to availability / Cost is subject to change.`
+    ],
+    include: [
+      "07 Nights' accommodation at Respective Hotel on a bed breakfast basic",
+      "All transfers and sightseeing by AC vehicle",
+      "English speaking guide during sightseeing",
+      "All jungle activities in Chitwan",
+      "Full board meals in Chitwan (Breakfast, Lunch & Dinner)",
+      "All applicable taxes and service charges"
+    ],
+    exclude: [
+      "Any meal not mentioned in the program (except in Chitwan)",
+      "Entry fees to monuments and temples",
+      "Insurance Fee",
+      "Personal expenses and tips",
+      "Optional activities not mentioned in the program",
+      "Any service not mentioned in the inclusions"
+    ],
+    plan: [
+      {
+        day: "Day 01",
+        title: "Arrival – Drive to Pokhara",
+        description: "Arrival at Gorakhpur Station then drive to Pokhara. Upon arrival at the hotel welcome with soft drink and check-in. Overnight stay at Pokhara."
+      },
+      {
+        day: "Day 02",
+        title: "Pokhara local sightseeing",
+        description: "After breakfast then drive to local sightseeing of following places in Pokhara: Bindebashini temple, Barahi temple, Seti river, Devi's fall, Mahendra cave. After sightseeing drive back to hotel. Overnight stay at hotel."
+      },
+      {
+        day: "Day 03",
+        title: "Local sightseeing",
+        description: "After breakfast proceed for Pumdikot (Tallest Mahadev Statue) and Peace Pagoda sightseeing. After sightseeing drive back to hotel. Over night stay at Pokhara.",
+        highlights: [
+          "Visit the impressive Shiva statue at Pumdikot",
+          "Enjoy panoramic views from World Peace Pagoda",
+          "See the beautiful Phewa Lake from above"
+        ]
+      },
+      {
+        day: "Day 04",
+        title: "Drive to Kathmandu",
+        description: "Morning after breakfast check out from the hotel and drive to Kathmandu via Manakamana darshan. Welcome with soft drink and check-in. Overnight stay at Kathmandu."
+      },
+      {
+        day: "Day 05",
+        title: "Kathmandu local sightseeing",
+        description: "After breakfast ready to go for local sightseeing of following places in Kathmandu: Pashupatinath temple, Budanilkantha temple (JAL NARAYAN), Swayabhunath temple (MONKEY TEMPLE). After sightseeing, drive back to the hotel. Overnight stay at the hotel."
+      },
+      {
+        day: "Day 06",
+        title: "Chandragiri Hills sightseeing",
+        description: "After breakfast, proceed for Chandragiri sightseeing one of the most beautiful place from where you can explore the beauty of nature, hills, mountains and valley and visit Bhaleshwor Mahadev Temple. After mesmerizing sightseeing drive back to the hotel. Rest of day will be free of own activities. Overnight stay at Kathmandu."
+      },
+      {
+        day: "Day 07",
+        title: "Drive to Chitwan",
+        description: "After breakfast check out from the hotel then drive to Chitwan. Upon arrival at the hotel, welcome with soft drinks and check-in. Rest of the day will be free for own activities. Overnight stay at a hotel in Chitwan."
+      },
+      {
+        day: "Day 08",
+        title: "Jungle Safari & Departure",
+        description: "After breakfast proceed for Jungle Safari such as - Elephant/Jeep safari, Elephant Breeding Center Visit, Canoeing, bird watching, Tharu cultural program, village tour, Tharu village walk. After safari activities, drive to Gorakhpur for your onward destination."
+      }
+    ]
+  },
+  {
+    id: 8, // Buddhist Circuit: Lumbini & Beyond
+    overview: [
+      `Nepal 04 Nights 05 days. Transport: AC Coach. Pickup Point: Gorakhpur. Places Covered: Lumbini, Kathmandu & Pokhara. Duration: 04 Nights / 05 Days. Note: All hotels are subject to availability / Cost is subject to change.`
+    ],
+    include: [
+      "04 Nights' accommodation at Respective Hotel on a bed breakfast basic",
+      "All transfers and sightseeing by AC vehicle",
+      "English speaking guide during sightseeing",
+      "All applicable taxes and service charges"
+    ],
+    exclude: [
+      "Any meal not mentioned in the program",
+      "Entry fees to monuments and temples",
+      "Insurance Fee",
+      "Personal expenses and tips",
+      "Optional activities",
+      "Any service not mentioned in the inclusions"
+    ],
+    plan: [
+      {
+        day: "Day 01",
+        title: "Arrival – Drive to Lumbini",
+        description: "Arrival at Gorakhpur and drive to Lumbini - the birthplace of Lord Buddha. Upon arrival, check-in at the hotel. Evening visit to Maya Devi Temple and the Sacred Garden. Overnight stay at Lumbini."
+      },
+      {
+        day: "Day 02",
+        title: "Lumbini Sightseeing",
+        description: "After breakfast, full day exploration of Lumbini including different monasteries built by various Buddhist countries, Puskarini Pond where Buddha's mother took a dip before his birth, and the Ashoka Pillar. Evening leisure time. Overnight stay at Lumbini.",
+        highlights: [
+          "Visit Maya Devi Temple - birthplace of Buddha",
+          "Explore monasteries from different Buddhist countries",
+          "See the sacred Ashoka Pillar",
+          "Experience the peace of the Sacred Garden"
+        ]
+      },
+      {
+        day: "Day 03",
+        title: "Drive to Pokhara",
+        description: "After breakfast, drive to Pokhara. Upon arrival, check-in at the hotel. Evening boat ride on Phewa Lake with visit to Tal Barahi Temple. Overnight stay at Pokhara."
+      },
+      {
+        day: "Day 04",
+        title: "Drive to Kathmandu",
+        description: "After breakfast, check out from the hotel and drive to Kathmandu. Upon arrival, check-in at the hotel. Afternoon visit to Bouddhanath Stupa - one of the largest Buddhist stupas in the world. Overnight stay at Kathmandu."
+      },
+      {
+        day: "Day 05",
+        title: "Departure",
+        description: "After breakfast, visit Swayambhunath Stupa (Monkey Temple) - another important Buddhist pilgrimage site. Later, drive to Gorakhpur for your onward journey."
+      }
+    ]
+  },
+  {
+    id: 9, // Essence of Nepal: Pokhara & Kathmandu
+    overview: [
+      `Nepal 05 Nights 06 days. Transport: AC Coach. Pickup Point: Gorakhpur. Places Covered: Pokhara & Kathmandu. Duration: 05 Nights / 06 Days. Note: All hotels are subject to availability / Cost is subject to change.`
+    ],
+    include: [
+      "05 Nights' accommodation at Respective Hotel on a bed breakfast basic",
+      "All transfers and sightseeing by AC vehicle",
+      "English speaking guide during sightseeing",
+      "All applicable taxes and service charges"
+    ],
+    exclude: [
+      "Any meal not mentioned in the program",
+      "Entry fees to monuments and temples",
+      "Insurance Fee",
+      "Personal expenses and tips",
+      "Optional activities",
+      "Any service not mentioned in the inclusions"
+    ],
+    plan: [
+      {
+        day: "Day 01",
+        title: "Arrival – Drive to Pokhara",
+        description: "Pickup from Gorakhpur then drive to Pokhara. Upon arrival at the hotel welcome with soft drink and check-in. Overnight stay at Pokhara."
+      },
+      {
+        day: "Day 02",
+        title: "Pokhara sightseeing",
+        description: "After breakfast ready to go for local sightseeing of following places in Pokhara: Bindabashini temple, Barahi temple, Seti river, Devi's fall, Mahendra cave. After sightseeing drive back to hotel. Overnight stay at Pokhara.",
+        highlights: [
+          "Visit the sacred Bindabashini Temple",
+          "Explore Barahi Temple on Phewa Lake",
+          "Witness the unique Seti River gorge",
+          "Experience the magnificent Devi's Fall",
+          "Discover the mysterious Mahendra Cave"
+        ]
+      },
+      {
+        day: "Day 03",
+        title: "Pokhara leisure day",
+        description: "Day free for leisure activities in Pokhara. Optional activities include paragliding, ultralight flight, zip-lining or simply relaxing by the lake. Overnight stay at Pokhara."
+      },
+      {
+        day: "Day 04",
+        title: "Drive to Kathmandu",
+        description: "After breakfast then check out from hotel and drive to Kathmandu via Manakamana darshan. Welcome soft drink and check-in. overnight stay at Kathmandu."
+      },
+      {
+        day: "Day 05",
+        title: "Kathmandu Sightseeing",
+        description: "After breakfast proceed for sightseeing at the following places: Pashupatinath Temple (Which belongs to Lord Shiva), Budanilkantha (Jal Narayan), Swayabhunath Stupa (monkey temple). After sightseeing drive back to the hotel. Overnight stay at a hotel in Kathmandu."
+      },
+      {
+        day: "Day 06",
+        title: "Departure",
+        description: "After breakfast check out hotel then drive to Gorakhpur board for onward destination."
+      }
+    ]
+  },
+  {
+    id: 10, // Divine Muktinath Yatra
+    overview: [
+      `Nepal 05 Nights 06 days. Transport: AC Coach. Pickup Point: Ex:Kathmandu. Places Covered: Kathmandu, Pokhara & Muktinath. Duration: 05 Nights / 06 Days. Note: All flights and hotels are subject to availability / Cost is subject to change.`
+    ],
+    include: [
+      "05 Nights' accommodation at Respective Hotel on a bed breakfast basic",
+      "Arrival and departure transfer and sightseeing tours Private A/C Vehicle",
+      "Air tickets for Pokhara-Jomsom-Pokhara",
+      "Jomsom – Muktinath – Jomsom by jeep sharing basis",
+      "ACAP permit fee",
+      "All current government taxes as applicable"
+    ],
+    exclude: [
+      "Any meal not mentioned on the above program during the tour",
+      "Any entry fees during sightseeing",
+      "Insurance Fee",
+      "Monuments entrance fees & any payable fee on the spot",
+      "Personal expenses and tips",
+      "Cost arising out of flight cancellation/road blockades/landslides",
+      "Any other expenses not mentioned in the inclusions"
+    ],
+    plan: [
+      {
+        day: "Day 01",
+        title: "Arrival – Kathmandu",
+        description: "Upon arrival at Kathmandu Airport, you will be greeted and assisted by our Representative. Transfer to Hotel for check-in. Evening visit to Pashupatinath Temple for evening aarti. Overnight in Kathmandu Hotel."
+      },
+      {
+        day: "Day 02",
+        title: "Kathmandu Sightseeing",
+        description: "After breakfast, full day Kathmandu sightseeing including Pashupatinath Temple, Bouddhanath Stupa, Budhanilkantha (Jal Narayan) and Swayambhunath. Evening free for shopping and leisure. Overnight stay at Kathmandu.",
+        highlights: [
+          "Visit the sacred Pashupatinath Temple complex",
+          "Explore the magnificent Bouddhanath Stupa",
+          "See the reclining Vishnu at Budhanilkantha",
+          "Visit ancient Swayambhunath Stupa"
+        ]
+      },
+      {
+        day: "Day 03",
+        title: "Kathmandu – Pokhara",
+        description: "After breakfast, drive to Pokhara (about 210 km, 6/7 hrs drive). En-route, visit Manakamana Devi Temple by Cable Car. Upon arrival in Pokhara, check-in at the hotel. Evening boat ride on Phewa Lake. Overnight in Pokhara Hotel."
+      },
+      {
+        day: "Day 04",
+        title: "Pokhara – Jomsom – Muktinath – Jomsom",
+        description: "Early morning, fly to Jomsom (about 20 mins). Drive to Muktinath by Jeep (about 20 km, 1 hr drive). Walk up (30/40 mins) to Muktinath Temple. Perform puja and darshan at this sacred site of salvation. After darshan, walk back to Jeep station and drive back to Jomsom. Overnight in Jomsom Hotel."
+      },
+      {
+        day: "Day 05",
+        title: "Jomsom – Pokhara – Kathmandu",
+        description: "Fly back to Pokhara. Upon arrival, sightseeing of Pokhara including Devi's Fall, Gupteshwor Cave, Bindabasini Temple, and Seti Gorge. Evening flight to Kathmandu. Overnight stay at Kathmandu."
+      },
+      {
+        day: "Day 06",
+        title: "Departure",
+        description: "After breakfast, free time until departure. Transfer to Airport for onward destination."
+      }
+    ]
+  }
+];
 import { ITourDataType } from "@/interFace/interFace";
 import tourImgOne from "../../public/assets/images/tour/Top Trending Packages 01.png";
 import tourImgTwo from "../../public/assets/images/tour/Top Trending Packages 02.png";
