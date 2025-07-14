@@ -81,7 +81,7 @@ export const sliderData: IHomeTwoSliderData[] = [
       tagOne: "Trekking In",
       tagTwo: "Annapurna Range",
       tagThree: "",
-      description: "Encounter rhinos, tigers, and exotic birds in Nepal's premier wildlife conservation area."
+      description: "Discover the magic of trekking in the Annapurna region of Nepal."
     },
     {
       id: 8,
@@ -207,9 +207,9 @@ export const sliderData: IHomeTwoSliderData[] = [
       id: 23,
       bgImg: bannerImgRafting,
       tagOne: "Rafting",
-      tagTwo: "on the",
+      tagTwo: "in the",
       tagThree: "Trishuli River",
-      description: "Experience the thrill of white-water rafting on Trishuli River, surrounded by stunning landscapes."
+      description: "Experience the thrill of white-water rafting in Trishuli River, surrounded by stunning landscapes."
     },
     {
       id: 24,
