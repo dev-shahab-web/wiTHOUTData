@@ -4,18 +4,22 @@ import React from "react";
 import { aboutServices, aboutWhyChooseUs } from "@/data/about-sections-data";
 
 const AboutArea = () => {
+  const modernFontFamily = "'Inter', 'SF Pro Display', -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif";
+  
   return (
     <div className="container">
       {/* Top: About Us, Mission, Vision */}
       <div className="row mb-5">
         <div className="col-12 mb-4">
-          <h2 style={{ fontWeight: 700, fontSize: 28 }}>About Us</h2>
+          <h2 style={{ fontWeight: 700, fontSize: 28, fontFamily: modernFontFamily }}>About Us</h2>
           <p
             style={{
               fontSize: 17,
               color: "#222",
               marginBottom: 0,
               marginTop: 10,
+              fontFamily: modernFontFamily,
+              lineHeight: 1.6,
             }}
           >
             At <strong>Holy Nepal Yatra</strong>, we are dedicated to showcasing
@@ -30,6 +34,8 @@ const AboutArea = () => {
               color: "#222",
               marginBottom: 0,
               marginTop: 10,
+              fontFamily: modernFontFamily,
+              lineHeight: 1.6,
             }}>
               Our services span a wide array of Nepal-centric tours including{" "}
               <strong>cultural explorations</strong>,{" "}
@@ -48,6 +54,8 @@ const AboutArea = () => {
               color: "#222",
               marginBottom: 0,
               marginTop: 10,
+              fontFamily: modernFontFamily,
+              lineHeight: 1.6,
             }}>
               We are proud of our <strong>team of local experts</strong> and{" "}
               <strong>seasoned travel professionals</strong> who know Nepal
@@ -62,6 +70,8 @@ const AboutArea = () => {
               color: "#222",
               marginBottom: 0,
               marginTop: 10,
+              fontFamily: modernFontFamily,
+              lineHeight: 1.6,
             }}>
               Holy Nepal Yatra stands for{" "}
               <strong>trust, loyalty, and genuine service</strong>. We believe
@@ -73,13 +83,15 @@ const AboutArea = () => {
         </div>
 
         <div className="col-12 mb-4">
-          <h2 style={{ fontWeight: 700, fontSize: 24 }}>Our Mission</h2>
+          <h2 style={{ fontWeight: 700, fontSize: 24, fontFamily: modernFontFamily }}>Our Mission</h2>
           <p
             style={{
               fontSize: 17,
               color: "#222",
               marginBottom: 0,
               marginTop: 10,
+              fontFamily: modernFontFamily,
+              lineHeight: 1.6,
             }}
           >
             Our mission at Holy Nepal Yatra is to provide{" "}
@@ -98,13 +110,15 @@ const AboutArea = () => {
         </div>
 
         <div className="col-12 mb-4">
-          <h2 style={{ fontWeight: 700, fontSize: 24 }}>Our Vision</h2>
+          <h2 style={{ fontWeight: 700, fontSize: 24, fontFamily: modernFontFamily }}>Our Vision</h2>
           <p
             style={{
               fontSize: 17,
               color: "#222",
               marginBottom: 0,
               marginTop: 10,
+              fontFamily: modernFontFamily,
+              lineHeight: 1.6,
             }}
           >
             To become Nepal’s most{" "}
@@ -135,6 +149,7 @@ const AboutArea = () => {
                 fontWeight: 700,
                 fontSize: 22,
                 marginBottom: 24,
+                fontFamily: modernFontFamily,
               }}
             >
               Our Services
@@ -179,8 +194,8 @@ const AboutArea = () => {
                       </span>
                     </span>
                     <div>
-                      <span style={{ fontWeight: 600 }}>{item.title}</span>
-                      <p style={{ margin: 0, color: "#444" }}>{item.detail}</p>
+                      <span style={{ fontWeight: 600, fontFamily: modernFontFamily }}>{item.title}</span>
+                      <p style={{ margin: 0, color: "#444", fontFamily: modernFontFamily, lineHeight: 1.5 }}>{item.detail}</p>
                     </div>
                   </div>
                 </div>
@@ -203,6 +218,7 @@ const AboutArea = () => {
                 fontWeight: 700,
                 fontSize: 22,
                 marginBottom: 24,
+                fontFamily: modernFontFamily,
               }}
             >
               Why Choose Us?
@@ -247,8 +263,8 @@ const AboutArea = () => {
                       </span>
                     </span>
                     <div>
-                      <span style={{ fontWeight: 600 }}>{item.title}</span>
-                      <p style={{ margin: 0, color: "#444" }}>{item.detail}</p>
+                      <span style={{ fontWeight: 600, fontFamily: modernFontFamily }}>{item.title}</span>
+                      <p style={{ margin: 0, color: "#444", fontFamily: modernFontFamily, lineHeight: 1.5 }}>{item.detail}</p>
                     </div>
                   </div>
                 </div>
