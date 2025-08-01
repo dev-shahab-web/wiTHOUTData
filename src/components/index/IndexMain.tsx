@@ -18,10 +18,15 @@ import TrendsArea from "../home-two/TrendsArea";
 import TourAreaTwo from "../home-two/TourAreaTwo";
 import ContactFormArea from "../contact/ContactFormArea";
 import ContactMapArea from "../contact/ContactMapArea";
+import BackgroundMusic from "../common/BackgroundMusic";
 
 const IndexMain = () => {
   return (
     <>
+      {/* Background Music Component */}
+      <BackgroundMusic />
+
+      {/* Main Content */}
       {/* <OffCanvasArea /> */}
       <BannerTwo />
       <ChooseArea />
