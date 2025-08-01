@@ -9,7 +9,7 @@ import { Toaster } from "sonner";
 import GlobalWhatsAppCTA from "@/components/GlobalWhatsAppCTA";
 
 export const metadata = {
-  title: "HolyNepalYatra | Best Nepal Tour Packages - Top Travel Agency in Nepal",
+  title: "HolyNepalYatra | Best Nepal Tour Packages - Top Travel Agency in Gorakhpur",
   description: "Discover the best of Nepal with HolyNepalYatra. We offer premium Nepal tour packages, religious tours, adventure trips, and customized travel experiences. Trusted by thousands for unforgettable journeys across Nepal.",
 };
 
