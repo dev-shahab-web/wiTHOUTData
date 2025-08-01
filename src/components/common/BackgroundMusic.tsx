@@ -11,13 +11,13 @@ interface BackgroundMusicProps {
 // Custom SVG Icons
 const PlayIcon = () => (
   <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-    <path d="M8 5V19L19 12L8 5Z" fill="currentColor"/>
+    <path d="M8 5V19L19 12L8 5Z" fill="#4B5563"/>
   </svg>
 );
 
 const PauseIcon = () => (
   <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-    <path d="M6 4H10V20H6V4ZM14 4H18V20H14V4Z" fill="currentColor"/>
+    <path d="M6 4H10V20H6V4ZM14 4H18V20H14V4Z" fill="#4B5563"/>
   </svg>
 );
 
@@ -56,28 +56,62 @@ const BackgroundMusic: React.FC<BackgroundMusicProps> = ({
   }, []);
 
   useEffect(() => {
-    const handleUserInteraction = () => {
+    const handleUserInteraction = (event: Event) => {
+      console.log('🎵 User interaction detected:', event.type);
       setUserInteracted(true);
       // Try to play audio after first user interaction (auto-start enabled)
       if (audioRef.current && !isMuted) {
         audioRef.current.play()
-          .then(() => setIsPlaying(true))
+          .then(() => {
+            console.log('✅ Background music started after', event.type, 'event');
+            setIsPlaying(true);
+          })
           .catch((error) => {
-            console.log('Audio autoplay prevented:', error);
+            console.log('❌ Audio autoplay prevented after', event.type, 'event:', error);
             setIsPlaying(false); // Set to false if autoplay fails
           });
       }
     };
 
-    // Listen for any user interaction
-    const events = ['click', 'keydown', 'touchstart'];
+    // Listen for any user interaction (including scroll, touch gestures, mouse movements)
+    const events = [
+      'click', 
+      'keydown', 
+      'touchstart', 
+      'touchmove', 
+      'touchend',
+      'scroll', 
+      'mousemove', 
+      'mousedown',
+      'wheel',
+      'gesturestart',
+      'gesturechange',
+      'gestureend'
+    ];
+
+    console.log('🎧 Setting up interaction listeners for events:', events);
+
     events.forEach(event => {
-      document.addEventListener(event, handleUserInteraction, { once: true });
+      if (event === 'scroll' || event === 'wheel') {
+        // Scroll events on window for better detection
+        window.addEventListener(event, handleUserInteraction, { once: true, passive: true });
+      } else if (event.startsWith('gesture')) {
+        // Gesture events for iOS devices
+        document.addEventListener(event, handleUserInteraction, { once: true, passive: true });
+      } else {
+        // Regular events on document
+        document.addEventListener(event, handleUserInteraction, { once: true, passive: true });
+      }
     });
 
     return () => {
+      console.log('🧹 Cleaning up interaction listeners');
       events.forEach(event => {
-        document.removeEventListener(event, handleUserInteraction);
+        if (event === 'scroll' || event === 'wheel') {
+          window.removeEventListener(event, handleUserInteraction);
+        } else {
+          document.removeEventListener(event, handleUserInteraction);
+        }
       });
     };
   }, [isMuted]);
@@ -86,10 +120,16 @@ const BackgroundMusic: React.FC<BackgroundMusicProps> = ({
   useEffect(() => {
     if (audioRef.current) {
       audioRef.current.volume = volume;
+      console.log('🔊 Setting audio volume to:', volume);
+      console.log('🚀 Attempting immediate auto-play...');
       // Attempt to auto-play on component mount
       audioRef.current.play()
-        .then(() => setIsPlaying(true))
-        .catch(() => {
+        .then(() => {
+          console.log('✅ Auto-play successful!');
+          setIsPlaying(true);
+        })
+        .catch((error) => {
+          console.log('⏸️ Auto-play blocked by browser, waiting for user interaction');
           // Auto-play failed, will wait for user interaction
           setIsPlaying(false);
         });
@@ -98,21 +138,28 @@ const BackgroundMusic: React.FC<BackgroundMusicProps> = ({
 
   console.log(isPlaying, isMuted); 
 
-  const toggleMute = () => {
+  const toggleAudio = () => {
     if (audioRef.current) {
-      if (isMuted) {
-        // Unmute and play
-        audioRef.current.muted = false;
-        setIsMuted(false);
-        audioRef.current.play()
-          .then(() => setIsPlaying(true))
-          .catch((error) => console.error('Audio play failed:', error));
-      } else {
-        // Mute and pause
+      if (isPlaying && !isMuted) {
+        // Currently playing and unmuted -> mute and pause
         audioRef.current.muted = true;
         audioRef.current.pause();
         setIsMuted(true);
         setIsPlaying(false);
+        console.log('🔇 Audio muted and paused by user');
+      } else {
+        // Currently muted or paused -> unmute and play
+        audioRef.current.muted = false;
+        setIsMuted(false);
+        audioRef.current.play()
+          .then(() => {
+            setIsPlaying(true);
+            console.log('🔊 Audio unmuted and playing by user');
+          })
+          .catch((error) => {
+            console.error('Audio play failed:', error);
+            setIsPlaying(false);
+          });
       }
     }
   };
@@ -138,15 +185,16 @@ const BackgroundMusic: React.FC<BackgroundMusicProps> = ({
       <div
         style={{
           position: 'fixed',
-          bottom: '20px',
+          bottom: isMobile ? '24px' : '20px',
           [isMobile ? 'left' : 'right']: '20px',
           zIndex: 1000,
           display: 'flex',
           gap: '8px'
         }}
       >
+        {/* Single Audio Control Button */}
         <button
-          onClick={toggleMute}
+          onClick={toggleAudio}
           style={{
             background: 'rgba(255, 255, 255, 0.1)',
             backdropFilter: 'blur(10px)',
@@ -171,10 +219,10 @@ const BackgroundMusic: React.FC<BackgroundMusicProps> = ({
             e.currentTarget.style.transform = 'scale(1)';
             e.currentTarget.style.background = 'rgba(255, 255, 255, 0.1)';
           }}
-          aria-label={isMuted ? 'Unmute and play background music' : 'Mute and pause background music'}
-          title={isMuted ? 'Unmute & Play' : 'Mute & Pause'}
+          aria-label={isPlaying && !isMuted ? 'Turn off background music' : 'Turn on background music'}
+          title={isPlaying && !isMuted ? 'Music On - Click to Turn Off' : 'Music Off - Click to Turn On'}
         >
-          {isMuted ? <VolumeOffIcon  /> : <VolumeOnIcon />}
+          {isPlaying && !isMuted ? <VolumeOnIcon /> : <VolumeOffIcon />}
         </button>
       </div>
     </>
