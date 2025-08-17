@@ -4,8 +4,8 @@ export const contactData: IContactData[] = [
     {
         id: 1,
         title: 'Call Us On',
-        subTitleOne: '+91 842 981 2424',
-        subTitleTwo: '+91 842 996 2424',
+        subTitleOne: '+91 842 996 2424',
+        subTitleTwo: '+91 842 981 2424',
         icon: 'icon-call-ring',
     },
     {

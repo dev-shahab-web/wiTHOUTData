@@ -88,8 +88,8 @@ const SidebarMain = () => {
                       className="offcanvas-contact-text"
                       style={{ display: "flex", flexDirection: "column" }}
                     >
-                      <Link href="tel:+918429812424">+91 842 981 2424</Link>
                       <Link href="tel:+918429962424">+91 842 996 2424</Link>
+                      <Link href="tel:+918429812424">+91 842 981 2424</Link>
                     </div>
                   </li>
                   <li className="d-flex align-items-center gap-10">
