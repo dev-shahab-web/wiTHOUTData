@@ -14,7 +14,179 @@ export interface ITourDetailsContent {
 
 export const tourDetailsContent: ITourDetailsContent[] = [
   {
-    id: 1, // Sacred Journey to Muktinath (Kathmandu - Pokhara - Muktinath)
+    id: 1, // KAILASH MANASAROVAR OVERLAND TOURS
+    overview: [
+      `Tibet/Nepal 12 Nights 13 days. Transport: AC Coach/Land Cruiser. Pickup Point: Ex:Kathmandu. Places Covered: Kathmandu, Kyirong, Saga, Darchen, Kailash Mansarovar. Duration: 12 Nights / 13 Days. Note: All hotels and permits are subject to availability / Cost is subject to change.`
+    ],
+    include: [
+      "12 Nights' accommodation at Respective Hotels/Guest Houses on sharing basis",
+      "All meals during the tour (Breakfast, Lunch & Dinner)",
+      "Transportation by Land Cruiser in Tibet",
+      "Tibet Group Visa",
+      "Tibet Travel Permit and Alien Travel Permit",
+      "Professional English speaking Tibetan guide",
+      "All entry fees and monastery entrance fees",
+      "Oxygen cylinders and first aid kit",
+      "Sacred thread (Janeu) and holy water from Mansarovar",
+      "Kailash Parikrama by foot/pony (optional)"
+    ],
+    exclude: [
+      "Nepal Visa fees",
+      "International airfare to/from Kathmandu",
+      "Personal expenses like laundry, telephone, tips etc.",
+      "Travel insurance (mandatory)",
+      "Emergency evacuation cost",
+      "Pony/Porter charges during Kailash Parikrama (if required)",
+      "Single room supplement",
+      "Any expenses due to roadblocks, weather conditions",
+      "Medical expenses and evacuation if required"
+    ],
+    plan: [
+      {
+        day: "Day 01",
+        title: "Arrival in Kathmandu",
+        description: "Arrive at Tribhuvan International Airport, Kathmandu. Meet with our representative and transfer to hotel. Evening briefing about the tour. Overnight in Kathmandu."
+      },
+      {
+        day: "Day 02",
+        title: "Kathmandu Sightseeing & Preparation",
+        description: "Visit Pashupatinath Temple, Boudhanath Stupa, and other important religious sites. Complete formalities for Tibet travel permits. Medical check-up and preparation for high altitude travel. Overnight in Kathmandu."
+      },
+      {
+        day: "Day 03",
+        title: "Kathmandu to Kyirong (2,800m)",
+        description: "Drive to Nepal-Tibet border at Rasuwa Gadhi. Complete immigration formalities and cross into Tibet at Kyirong. First day acclimatization in Tibet. Overnight in Kyirong."
+      },
+      {
+        day: "Day 04",
+        title: "Kyirong to Saga (4,640m)",
+        description: "Drive to Saga through beautiful Tibetan landscape. Gradual altitude gain for acclimatization. Visit local monastery if time permits. Overnight in Saga."
+      },
+      {
+        day: "Day 05",
+        title: "Saga to Mansarovar Lake (4,590m)",
+        description: "Drive to the sacred Mansarovar Lake. Take holy bath and perform puja at the lake. Circumambulation (Parikrama) of Mansarovar Lake. Overnight camping near Mansarovar or in Chuku Monastery."
+      },
+      {
+        day: "Day 06",
+        title: "Mansarovar to Darchen (4,670m)",
+        description: "Early morning puja at Mansarovar Lake. Drive to Darchen, the base camp for Mount Kailash. First glimpse of sacred Mount Kailash. Preparation for Kailash Parikrama. Overnight in Darchen."
+      },
+      {
+        day: "Day 07",
+        title: "Darchen to Dirapuk (5,080m) - Day 1 of Kailash Parikrama",
+        description: "Start the sacred Kailash Parikrama (circumambulation). Trek from Darchen to Dirapuk monastery via Tarboche (prayer flag pole). Distance: 20 km. Overnight camping at Dirapuk."
+      },
+      {
+        day: "Day 08",
+        title: "Dirapuk to Zuthulpuk (4,790m) - Day 2 of Kailash Parikrama",
+        description: "Most challenging day crossing Dolma La Pass (5,630m). Offer prayers at Dolma La and proceed to Zuthulpuk monastery. Distance: 22 km. Overnight camping at Zuthulpuk."
+      },
+      {
+        day: "Day 09",
+        title: "Zuthulpuk to Darchen - Day 3 of Kailash Parikrama",
+        description: "Complete the sacred Kailash Parikrama by reaching Darchen. Distance: 14 km. Rest and celebration for completing the holy circumambulation. Overnight in Darchen."
+      },
+      {
+        day: "Day 10",
+        title: "Darchen to Saga",
+        description: "Drive back to Saga. En-route visit Rakshas Tal (Ghost Lake) if time permits. Rest day after completing the challenging Kailash Parikrama. Overnight in Saga."
+      },
+      {
+        day: "Day 11",
+        title: "Saga to Kyirong",
+        description: "Drive back to Kyirong border town. Last day in Tibet. Rest and preparation for return journey. Overnight in Kyirong."
+      },
+      {
+        day: "Day 12",
+        title: "Kyirong to Kathmandu",
+        description: "Complete Tibet exit formalities and cross back to Nepal. Drive to Kathmandu. Evening celebration dinner. Overnight in Kathmandu."
+      },
+      {
+        day: "Day 13",
+        title: "Departure from Kathmandu",
+        description: "Transfer to Tribhuvan International Airport for onward destination. End of sacred Kailash Mansarovar Yatra."
+      }
+    ]
+  },
+  {
+    id: 2, // KAILASH MANSAROVAR TOURS BY HELICOPTER
+    overview: [
+      `Nepal/Tibet 8 Nights 9 days. Transport: Helicopter/AC Coach. Pickup Point: Ex:Kathmandu. Places Covered: Kathmandu, Nepalgunj, Simikot, Hilsa, Taklakot, Mansarovar, Kailash. Duration: 8 Nights / 9 Days. Note: All flights and accommodation are subject to weather conditions and availability / Cost is subject to change.`
+    ],
+    include: [
+      "08 Nights' accommodation at Respective Hotels/Lodges on sharing basis",
+      "All meals during the tour (Breakfast, Lunch & Dinner)",
+      "Helicopter flights as per itinerary (Kathmandu-Nepalgunj-Simikot-Hilsa)",
+      "Land transportation in Tibet by Land Cruiser",
+      "Tibet Group Visa and all permits",
+      "Professional English speaking guide",
+      "All entry fees and monastery entrance fees",
+      "Sacred thread (Janeu) and holy water from Mansarovar",
+      "Oxygen cylinders and first aid kit",
+      "Porter services during Kailash Parikrama"
+    ],
+    exclude: [
+      "Nepal Visa fees",
+      "International airfare to/from Kathmandu",
+      "Personal expenses like laundry, telephone, tips etc.",
+      "Travel insurance (mandatory)",
+      "Emergency evacuation cost",
+      "Single room supplement",
+      "Any expenses due to weather conditions or flight cancellations",
+      "Medical expenses and evacuation if required",
+      "Additional helicopter charges due to weather delays"
+    ],
+    plan: [
+      {
+        day: "Day 01",
+        title: "Arrival in Kathmandu",
+        description: "Arrive at Tribhuvan International Airport, Kathmandu. Meet with our representative and transfer to hotel. Evening briefing about the helicopter tour. Overnight in Kathmandu."
+      },
+      {
+        day: "Day 02",
+        title: "Kathmandu to Nepalgunj",
+        description: "Fly to Nepalgunj (1-hour flight). Complete formalities for Tibet permits and prepare for helicopter journey. Rest and acclimatization. Overnight in Nepalgunj."
+      },
+      {
+        day: "Day 03",
+        title: "Nepalgunj to Simikot to Hilsa by Helicopter",
+        description: "Helicopter flight from Nepalgunj to Simikot (45 minutes) and then to Hilsa border (15 minutes). Cross into Tibet at Sher/Hilsa border. Drive to Taklakot (Purang). Overnight in Taklakot."
+      },
+      {
+        day: "Day 04",
+        title: "Taklakot to Mansarovar Lake",
+        description: "Drive to sacred Mansarovar Lake (1.5 hours). Take holy bath and perform puja at the lake. Circumambulation (Parikrama) of Mansarovar Lake by vehicle. Overnight camping near Mansarovar."
+      },
+      {
+        day: "Day 05",
+        title: "Mansarovar to Darchen",
+        description: "Early morning puja at Mansarovar Lake. Drive to Darchen, the base camp for Mount Kailash. First darshan of sacred Mount Kailash. Preparation for Kailash Parikrama. Overnight in Darchen."
+      },
+      {
+        day: "Day 06",
+        title: "Kailash Parikrama - Day 1 (Darchen to Dirapuk)",
+        description: "Begin the sacred Kailash Parikrama. Trek/drive from Darchen to Dirapuk monastery (5,080m) via Tarboche. Distance covered by foot/vehicle as per physical condition. Overnight at Dirapuk."
+      },
+      {
+        day: "Day 07",
+        title: "Kailash Parikrama - Day 2 (Dirapuk to Zuthulpuk via Dolma La)",
+        description: "Cross the challenging Dolma La Pass (5,630m) - the highest point of Kailash Parikrama. Offer prayers and proceed to Zuthulpuk monastery. Helicopter assistance available if needed. Overnight at Zuthulpuk."
+      },
+      {
+        day: "Day 08",
+        title: "Complete Parikrama & Return to Taklakot",
+        description: "Complete the sacred Kailash Parikrama by reaching back to Darchen. Drive to Taklakot for border crossing preparations. Last night in Tibet. Overnight in Taklakot."
+      },
+      {
+        day: "Day 09",
+        title: "Hilsa to Kathmandu via Helicopter",
+        description: "Cross Tibet-Nepal border at Hilsa. Helicopter flight from Hilsa to Simikot to Nepalgunj to Kathmandu (subject to weather). Arrival in Kathmandu and transfer to airport for onward destination."
+      }
+    ]
+  },
+  {
+    id: 3, // Sacred Journey to Muktinath (Kathmandu - Pokhara - Muktinath)
     overview: [
       `KTM: Nepal 05 Nights 06 days. Transport: AC Coach. Pickup Point: Ex:Kathmandu. Places Covered: Kathmandu, Pokhara & Muktinath. Duration: 05 Nights / 06 Days. Note: All the above flights and hotels are subject to availability / Cost is subject to change.`
     ],
@@ -70,7 +242,7 @@ export const tourDetailsContent: ITourDetailsContent[] = [
     ]
   },
   {
-    id: 2, // Nepal Highlights: Pokhara & Kathmandu
+    id: 4, // Nepal Highlights: Pokhara & Kathmandu
     overview: [
       `Nepal 04 Nights 05 days. Transport: AC Coach. Pickup Point: Gorakhpur. Places Covered: Pokhara & Kathmandu. Duration: 04 Nights / 05 Days. Note: All hotels are subject to availability / Cost is subject to change.`
     ],
@@ -132,7 +304,7 @@ export const tourDetailsContent: ITourDetailsContent[] = [
     ]
   },
   {
-    id: 3, // Spiritual Nepal: Lumbini to Kathmandu
+    id: 5, // Spiritual Nepal: Lumbini to Kathmandu
     overview: [
       `Nepal 05 Nights 06 days. Transport: AC Coach. Pickup Point: Gorakhpur. Places Covered: Pokhara, Kathmandu & Lumbini. Duration: 05 Nights / 06 Days. Note: All hotels are subject to availability / Cost is subject to change.`
     ],
@@ -190,7 +362,7 @@ export const tourDetailsContent: ITourDetailsContent[] = [
     ]
   },
   {
-    id: 4, // Nature & Culture: Chitwan Safari Experience
+    id: 6, // Nature & Culture: Chitwan Safari Experience
     overview: [
       `Nepal 07 Nights 08 days. Transport: AC Coach. Pickup Point: Gorakhpur. Places Covered: Pokhara, Kathmandu & Chitwan National Park. Duration: 07 Nights / 08 Days. Note: All hotels are subject to availability / Cost is subject to change.`
     ],
@@ -254,7 +426,7 @@ export const tourDetailsContent: ITourDetailsContent[] = [
     ]
   },
   {
-    id: 5, // Heritage Trail: Lumbini & Kathmandu
+    id: 7, // Heritage Trail: Lumbini & Kathmandu
     overview: [
       `Nepal 04 Nights 05 days. Transport: AC Coach. Pickup Point: Gorakhpur. Places Covered: Lumbini, Pokhara & Kathmandu. Duration: 04 Nights / 05 Days. Note: All hotels are subject to availability / Cost is subject to change.`
     ],
@@ -306,7 +478,7 @@ export const tourDetailsContent: ITourDetailsContent[] = [
     ]
   },
   {
-    id: 6, // Pilgrimage to Muktinath Temple
+    id: 8, // Pilgrimage to Muktinath Temple
     overview: [
       `Nepal 04 Nights 05 days. Transport: AC Coach. Pickup Point: Kathmandu. Places Covered: Kathmandu, Pokhara & Muktinath. Duration: 04 Nights / 05 Days. Note: All flights and hotels are subject to availability / Cost is subject to change.`
     ],
@@ -362,7 +534,7 @@ export const tourDetailsContent: ITourDetailsContent[] = [
     ]
   },
   {
-    id: 7, // Adventure Nepal: Jungle Safari & Temples
+    id: 9, // Adventure Nepal: Jungle Safari & Temples
     overview: [
       `Nepal 07 Nights 08 days. Transport: AC Coach. Pickup Point: Gorakhpur. Places Covered: Pokhara, Kathmandu & Chitwan National Park. Duration: 07 Nights / 08 Days. Note: All hotels are subject to availability / Cost is subject to change.`
     ],
@@ -431,7 +603,7 @@ export const tourDetailsContent: ITourDetailsContent[] = [
     ]
   },
   {
-    id: 8, // Buddhist Circuit: Lumbini & Beyond
+    id: 10, // Buddhist Circuit: Lumbini & Beyond
     overview: [
       `Nepal 04 Nights 05 days. Transport: AC Coach. Pickup Point: Gorakhpur. Places Covered: Lumbini, Kathmandu & Pokhara. Duration: 04 Nights / 05 Days. Note: All hotels are subject to availability / Cost is subject to change.`
     ],
@@ -484,7 +656,7 @@ export const tourDetailsContent: ITourDetailsContent[] = [
     ]
   },
   {
-    id: 9, // Essence of Nepal: Pokhara & Kathmandu
+    id: 11, // Essence of Nepal: Pokhara & Kathmandu
     overview: [
       `Nepal 05 Nights 06 days. Transport: AC Coach. Pickup Point: Gorakhpur. Places Covered: Pokhara & Kathmandu. Duration: 05 Nights / 06 Days. Note: All hotels are subject to availability / Cost is subject to change.`
     ],
@@ -543,7 +715,7 @@ export const tourDetailsContent: ITourDetailsContent[] = [
     ]
   },
   {
-    id: 10, // Divine Muktinath Yatra
+    id: 12, // Divine Muktinath Yatra
     overview: [
       `Nepal 05 Nights 06 days. Transport: AC Coach. Pickup Point: Ex:Kathmandu. Places Covered: Kathmandu, Pokhara & Muktinath. Duration: 05 Nights / 06 Days. Note: All flights and hotels are subject to availability / Cost is subject to change.`
     ],
@@ -602,7 +774,8 @@ export const tourDetailsContent: ITourDetailsContent[] = [
         description: "After breakfast, free time until departure. Transfer to Airport for onward destination."
       }
     ]
-  }
+  },
+  
 ];
 import { ITourDataType } from "@/interFace/interFace";
 import tourImgOne from "../../public/assets/images/tour/Top Trending Packages 01.png";
@@ -1158,6 +1331,28 @@ export const tourData: ITourDataType[] = [
 
   {
     id: 1,
+    img: tourImgOne,
+    tourLocation: "Kathmandu - Kyirong - Saga - Mansarovar - Kailash",
+    tourRating: "4.8",
+    tourRatingCount: 160,
+    tourTitle: "Kailash Manasarovar Overland Tours",
+    tourPrice: 175000.0,
+    days: "13",
+    tourDuration: "12 Nights 13 Days",
+  },
+  {
+    id: 2,
+    img: tourImgOne,
+    tourLocation: "Kathmandu - Nepalgunj - Simikot - Mansarovar - Kailash",
+    tourRating: "4.8",
+    tourRatingCount: 180,
+    tourTitle: "Kailash Mansarovar Tours by Helicopter",
+    tourPrice: 220000.0,
+    days: "9",
+    tourDuration: "8 Nights 9 Days",
+  },
+  {
+    id: 3,
     img: tourImgTwo,
     tourLocation: "Kathmandu - Pokhara - Muktinath",
     tourRating: "4.8",
@@ -1168,7 +1363,7 @@ export const tourData: ITourDataType[] = [
     tourDuration: "5 Nights 6 Days",
   },
   {
-    id: 2,
+    id: 4,
     img: tourImgThree,
     tourLocation: "Gorakhpur - Pokhara - Kathmandu",
     tourRating: "4.7",
@@ -1179,7 +1374,7 @@ export const tourData: ITourDataType[] = [
     tourDuration: "4 Nights 5 Days",
   },
   {
-    id: 3,
+    id: 5,
     img: tourImgOne,
     tourLocation: "Gorakhpur - Pokhara - Kathmandu - Lumbini",
     tourRating: "4.9",
@@ -1190,7 +1385,7 @@ export const tourData: ITourDataType[] = [
     tourDuration: "5 Nights 6 Days",
   },
   {
-    id: 4,
+    id: 6,
     img: tourImgTwo,
     tourLocation: "Gorakhpur - Pokhara - Kathmandu - Chitwan",
     tourRating: "4.6",
@@ -1201,7 +1396,7 @@ export const tourData: ITourDataType[] = [
     tourDuration: "7 Nights 8 Days",
   },
   {
-    id: 5,
+    id: 7,
     img: tourImgOne,
     tourLocation: "Gorakhpur - Pokhara - Kathmandu - Lumbini",
     tourRating: "4.8",
@@ -1212,7 +1407,7 @@ export const tourData: ITourDataType[] = [
     tourDuration: "4 Nights 5 Days",
   },
   {
-    id: 6,
+    id: 8,
     img: tourImgThree,
     tourLocation: "Kathmandu - Pokhara - Muktinath",
     tourRating: "5.0",
@@ -1223,7 +1418,7 @@ export const tourData: ITourDataType[] = [
     tourDuration: "4 Nights 5 Days",
   },
   {
-    id: 7,
+    id: 9,
     img: tourImgOne,
     tourLocation: "Gorakhpur - Pokhara - Kathmandu - Chitwan",
     tourRating: "4.7",
@@ -1234,7 +1429,7 @@ export const tourData: ITourDataType[] = [
     tourDuration: "7 Nights 8 Days",
   },
   {
-    id: 8,
+    id: 10,
     img: tourImgThree,
     tourLocation: "Gorakhpur - Pokhara - Kathmandu - Lumbini",
     tourRating: "4.9",
@@ -1245,7 +1440,7 @@ export const tourData: ITourDataType[] = [
     tourDuration: "4 Nights 5 Days",
   },
   {
-    id: 9,
+    id: 11,
     img: tourImgTwo,
     tourLocation: "Gorakhpur - Pokhara - Kathmandu",
     tourRating: "4.5",
@@ -1256,7 +1451,7 @@ export const tourData: ITourDataType[] = [
     tourDuration: "5 Nights 6 Days",
   },
   {
-    id: 10,
+    id: 12,
     img: tourImgOne,
     tourLocation: "Kathmandu - Pokhara - Muktinath",
     tourRating: "4.8",
@@ -1266,4 +1461,5 @@ export const tourData: ITourDataType[] = [
     days: "6",
     tourDuration: "5 Nights 6 Days",
   },
+  
 ];
