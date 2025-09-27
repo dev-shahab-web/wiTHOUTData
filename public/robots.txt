@@ -1,0 +1,11 @@
+User-agent: *
+Allow: /
+
+# Sitemaps
+Sitemap: https://www.holynepalyatra.com/sitemap.xml
+
+# Disallow admin and internal pages
+Disallow: /dashboard/
+Disallow: /admin/
+Disallow: /_next/
+Disallow: /api/
